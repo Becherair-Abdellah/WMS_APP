@@ -4,13 +4,14 @@ import App from './App'
 import MainPages from './layouts/MainPages'
 import Signin from './pages/login/Signin'
 import Signup from './pages/signup/Signup'
+import Inbound from './pages/inbound/Inbound'
 const Router = createBrowserRouter([
     {
         path: '/',
         element: <App/>,
         children: [
             {index:true, element: <MainPages/>},
-            {path:'/Time', element: <h1>Write Timer </h1>},
+            {path:'/inbound', element: <Inbound/>},
             // {path:'/login', element: <Signin/>},
             // {path:'/signup', element: <Signup/>},
         ]

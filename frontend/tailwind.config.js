@@ -13,6 +13,12 @@ export default {
       },
       fontFamily:{
         ubuntu: ["Ubuntu","sans-serif"]
+      },
+      animation:{
+        'fast': 'fast .3s ease-in-out' 
+      },
+      gridTemplateColumns:{
+        custom: "13% 10% 15% 10% 12% 10% 15% 15%"
       }
     },
   },

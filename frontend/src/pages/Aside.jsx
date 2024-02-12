@@ -12,12 +12,13 @@ import { HiUsers } from "react-icons/hi";
 import { FaTruck } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { FaUpload } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 function Aside() {
   return (
     // <aside className='w-[250px] fixed left-0 top-0 h-screen '>
 
     // </aside>
-    <div className="w-64 fixed top-0 left-0 h-screen overflow-y-auto bg-gradient-to-r from-[#1c3fc5ff] to-[#2a51e7ff] p-3">
+    <div className="w-64 w fixed top-0 left-0 h-screen overflow-y-auto bg-gradient-to-r from-[#1c3fc5ff] to-[#2a51e7ff] p-3">
 
       <div className='flex items-center  justify-between'>
         <h1 className='text-white font-bold text-xl py-1'>WMSystem</h1>
@@ -28,12 +29,12 @@ function Aside() {
       <ul className="flex flex-col space-y-2">
       <li className="cursor-pointer py-2 px-2 rounded-sm flex items-center gap-3 text-white hover:bg-[#ffffff17]">
             <MdDashboard size={20}/>
-            <p> dashboard</p>
+            <p>dashboard</p>
           </li>
-          <li className="cursor-pointer py-2 px-2 flex items-center gap-3 text-white rounded-sm  hover:bg-[#ffffff17]">
+          <Link to={'/inbound'} className="cursor-pointer py-2 px-2 flex items-center gap-3 text-white rounded-sm  hover:bg-[#ffffff17]">
             <TbPackageExport size={20}/>
-            <p> Inbound</p>
-          </li>
+            <p>Inbound</p>
+          </Link>
           <li className="cursor-pointer py-2 px-2 flex items-center gap-3 text-white rounded-sm  hover:bg-[#ffffff17]">
             <TbPackageImport size={20}/>
             <p> Outbound</p>

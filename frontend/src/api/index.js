@@ -52,7 +52,7 @@ const all_data = {
 //   password: 'add0'
 // }
 // admin login
-const adminLogin = async (name, password) => {
+const adminLogin = async (name, password,fn,wa) => {
   all_data.admin_login.name = name;
   all_data.admin_login.password = password;
   if (all_data.admin_login.name && all_data.admin_login.password) {
@@ -66,8 +66,6 @@ const adminLogin = async (name, password) => {
       const {
         data: { data },
       } = response;
-      console.log(data.openid);
-
       all_data.authin = "1";
       all_data.login = false;
       all_data.admin = false;
@@ -79,8 +77,13 @@ const adminLogin = async (name, password) => {
       localStorage.setItem("login_name", all_data.login_name);
       localStorage.setItem("login_id", all_data.login_id);
       localStorage.setItem("login_mode", "admin");
-      // redirect("http://localhost:5173/");
-      window.location.href = "http://localhost:5173/";
+      console.log(response.data.code);
+     if(response.data.code == 200){
+      window.location.href = "http://localhost:5173/"
+     }else{
+      fn(false);
+      wa(true);
+     }
     } catch (e) {
       console.log(e);
     }
@@ -102,7 +105,6 @@ const register = async (name, ps1, cps) => {
     const {
       data: { data },
     } = response;
-    console.log(data)
     all_data.register = false;
     all_data.openid = data.openid;
     all_data.login_name = all_data.registerform.name;
@@ -117,7 +119,7 @@ const register = async (name, ps1, cps) => {
       password1: "",
       password2: "",
     };
-    window.location.href = "http://localhost:5173/";
+    response.data.code == 200? window.location.href = "http://localhost:5173/":'';
   } catch (e) {
     console.log(e);
   }

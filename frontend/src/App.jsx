@@ -33,7 +33,7 @@ function App() {
       </div> */}
 
     </header>
-    <div className='p-4'>
+    <div className='p-6 bg-gray-100'>
     <Outlet/>
     </div>
    </div>

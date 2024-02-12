@@ -5,9 +5,20 @@
 .c{
     width: calc(100% - 250px) !important;
 }
-.w-64 {
+.w {
     scrollbar-width: none;
 }
 html{
-    @apply font-ubuntu;
+    @apply font-ubuntu bg-gray-100;
 }
+.spin{
+    animation: spin .5s linear infinite;
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -85,3 +85,799 @@ Welcome To GreaterWMS
 172.18.0.1:36062 - - [11/Feb/2024:17:10:19] "GET /statics/icons/IOS.png" 200 3161
 172.18.0.1:36050 - - [11/Feb/2024:17:10:19] "GET /statics/icons/GitHub.png" 200 8624
 172.18.0.1:36062 - - [11/Feb/2024:17:10:22] "GET /warehouse/multiple/?max_page=30" 200 380
+172.18.0.1:50150 - - [11/Feb/2024:17:12:27] "POST /login/" 200 148
+172.18.0.1:50150 - - [11/Feb/2024:17:12:30] "GET /" 200 907
+172.18.0.1:50150 - - [11/Feb/2024:17:12:32] "GET /js/vendor.4a49a306.js" 200 2250242
+172.18.0.1:50160 - - [11/Feb/2024:17:12:32] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:50168 - - [11/Feb/2024:17:12:32] "GET /css/vendor.2ac1ba6a.css" 200 208815
+172.18.0.1:50162 - - [11/Feb/2024:17:12:32] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:50168 - - [11/Feb/2024:17:12:33] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:50150 - - [11/Feb/2024:17:12:34] "GET /js/62.846260f9.js" 200 361455
+172.18.0.1:50162 - - [11/Feb/2024:17:12:34] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:50168 - - [11/Feb/2024:17:12:34] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:50162 - - [11/Feb/2024:17:12:34] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:50168 - - [11/Feb/2024:17:12:34] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:50150 - - [11/Feb/2024:17:12:34] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:50162 - - [11/Feb/2024:17:13:10] "GET /warehouse/multiple/?max_page=30" 200 380
+172.18.0.1:50168 - - [11/Feb/2024:17:13:11] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:50168 - - [11/Feb/2024:17:13:12] "GET /statics/icons/logout.png" 200 3153
+172.18.0.1:50150 - - [11/Feb/2024:17:13:12] "GET /statics/staff/stafftype.png" 200 5872
+172.18.0.1:52896 - - [11/Feb/2024:17:14:18] "OPTIONS /login/" 200 -
+172.18.0.1:52896 - - [11/Feb/2024:17:14:20] "POST /login/" 200 148
+172.18.0.1:52896 - - [11/Feb/2024:17:14:47] "POST /login/" 200 102
+172.18.0.1:56018 - - [11/Feb/2024:17:22:22] "POST /login/" 200 102
+172.18.0.1:59606 - - [11/Feb/2024:17:29:45] "POST /login/" 200 148
+172.18.0.1:37230 - - [11/Feb/2024:17:31:55] "POST /login/" 200 148
+172.18.0.1:37230 - - [11/Feb/2024:17:32:22] "POST /login/" 200 148
+172.18.0.1:37230 - - [11/Feb/2024:17:32:57] "POST /login/" 200 148
+172.18.0.1:37230 - - [11/Feb/2024:17:33:52] "POST /login/" 200 148
+172.18.0.1:37230 - - [11/Feb/2024:17:34:28] "POST /login/" 200 148
+172.18.0.1:48208 - - [11/Feb/2024:17:49:56] "POST /login/" 200 148
+172.18.0.1:49020 - - [11/Feb/2024:17:51:23] "POST /login/" 200 148
+172.18.0.1:49020 - - [11/Feb/2024:17:52:11] "POST /login/" 200 148
+172.18.0.1:49628 - - [11/Feb/2024:17:53:50] "POST /login/" 200 148
+172.18.0.1:32836 - - [11/Feb/2024:17:57:24] "POST /login/" 200 148
+172.18.0.1:40734 - - [11/Feb/2024:18:01:12] "POST /login/" 200 148
+172.18.0.1:57304 - - [11/Feb/2024:18:06:33] "POST /login/" 200 148
+172.18.0.1:57304 - - [11/Feb/2024:18:06:44] "POST /login/" 200 148
+172.18.0.1:57304 - - [11/Feb/2024:18:07:02] "POST /login/" 200 148
+172.18.0.1:45090 - - [11/Feb/2024:18:13:07] "OPTIONS /register/" 200 -
+172.18.0.1:45090 - - [11/Feb/2024:18:13:09] "POST /register/" 200 148
+172.18.0.1:38904 - - [11/Feb/2024:18:18:25] "POST /register/" 200 149
+172.18.0.1:38904 - - [11/Feb/2024:18:18:57] "POST /register/" 200 78
+172.18.0.1:36508 - - [11/Feb/2024:18:21:01] "POST /register/" 200 78
+172.18.0.1:36508 - - [11/Feb/2024:18:21:24] "POST /register/" 200 78
+172.18.0.1:36508 - - [11/Feb/2024:18:21:49] "POST /register/" 200 78
+172.18.0.1:36508 - - [11/Feb/2024:18:22:33] "POST /register/" 200 150
+172.18.0.1:36508 - - [11/Feb/2024:18:23:20] "POST /register/" 200 79
+172.18.0.1:36508 - - [11/Feb/2024:18:23:40] "POST /register/" 200 152
+172.18.0.1:37092 - - [11/Feb/2024:18:35:15] "OPTIONS /register/" 200 -
+172.18.0.1:37092 - - [11/Feb/2024:18:35:19] "POST /register/" 200 147
+172.18.0.1:37092 - - [11/Feb/2024:18:35:25] "POST /register/" 200 76
+172.18.0.1:37092 - - [11/Feb/2024:18:36:06] "POST /register/" 200 148
+172.18.0.1:59898 - - [11/Feb/2024:18:36:30] "GET /statics/staff/stafftype.png" 200 5872
+172.18.0.1:59908 - - [11/Feb/2024:18:36:30] "GET /statics/icons/logout.png" 200 3153
+172.18.0.1:54706 - - [11/Feb/2024:18:43:37] "POST /login/" 200 148
+172.18.0.1:54706 - - [11/Feb/2024:18:44:38] "POST /register/" 200 151
+172.18.0.1:54706 - - [11/Feb/2024:18:45:29] "POST /register/" 200 148
+172.18.0.1:46678 - - [11/Feb/2024:20:44:58] "POST /login/" 200 148
+172.18.0.1:46678 - - [11/Feb/2024:20:45:42] "POST /register/" 200 152
+172.18.0.1:53540 - - [11/Feb/2024:20:50:36] "POST /login/" 200 148
+172.18.0.1:59948 - - [11/Feb/2024:20:57:35] "POST /login/" 200 148
+172.18.0.1:48484 - - [11/Feb/2024:20:59:04] "OPTIONS /register/" 200 -
+172.18.0.1:48484 - - [11/Feb/2024:20:59:06] "POST /register/" 200 149
+172.18.0.1:59130 - - [11/Feb/2024:21:01:01] "OPTIONS /register/" 200 -
+172.18.0.1:59130 - - [11/Feb/2024:21:01:01] "POST /register/" 200 84
+172.18.0.1:59130 - - [11/Feb/2024:21:01:07] "POST /register/" 200 84
+172.18.0.1:43066 - - [11/Feb/2024:22:14:25] "OPTIONS /register/" 200 -
+172.18.0.1:43066 - - [11/Feb/2024:22:14:27] "POST /register/" 200 149
+172.18.0.1:43066 - - [11/Feb/2024:22:14:55] "POST /register/" 200 149
+172.18.0.1:43066 - - [11/Feb/2024:22:15:21] "POST /register/" 200 77
+172.18.0.1:43066 - - [11/Feb/2024:22:16:09] "POST /register/" 200 87
+172.18.0.1:43066 - - [11/Feb/2024:22:16:45] "POST /register/" 200 153
+172.18.0.1:43066 - - [11/Feb/2024:22:17:24] "POST /login/" 200 104
+172.18.0.1:43066 - - [11/Feb/2024:22:17:43] "POST /login/" 200 104
+172.18.0.1:43066 - - [11/Feb/2024:22:18:07] "POST /login/" 200 103
+172.18.0.1:54082 - - [11/Feb/2024:22:20:10] "POST /login/" 200 148
+172.18.0.1:54082 - - [11/Feb/2024:22:20:31] "POST /login/" 200 102
+172.18.0.1:54082 - - [11/Feb/2024:22:21:26] "POST /login/" 200 148
+172.18.0.1:54082 - - [11/Feb/2024:22:21:58] "POST /login/" 200 102
+172.18.0.1:54082 - - [11/Feb/2024:22:22:12] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:22:52] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:23:15] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:23:39] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:24:17] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:25:01] "POST /login/" 200 104
+172.18.0.1:54082 - - [11/Feb/2024:22:25:21] "POST /login/" 200 104
+172.18.0.1:44572 - - [11/Feb/2024:22:26:22] "POST /login/" 200 104
+172.18.0.1:44572 - - [11/Feb/2024:22:26:57] "POST /login/" 200 104
+172.18.0.1:44572 - - [11/Feb/2024:22:27:08] "POST /login/" 200 104
+172.18.0.1:53500 - - [11/Feb/2024:22:28:09] "POST /register/" 200 88
+172.18.0.1:53500 - - [11/Feb/2024:22:29:00] "POST /register/" 200 88
+172.18.0.1:53500 - - [11/Feb/2024:22:29:49] "POST /register/" 200 89
+172.18.0.1:53500 - - [11/Feb/2024:22:30:36] "POST /register/" 200 151
+172.18.0.1:50924 - - [11/Feb/2024:22:31:42] "POST /register/" 200 150
+172.18.0.1:50924 - - [11/Feb/2024:22:31:59] "POST /register/" 200 91
+172.18.0.1:50924 - - [11/Feb/2024:22:32:46] "POST /register/" 200 91
+172.18.0.1:48384 - - [11/Feb/2024:22:34:00] "POST /register/" 200 155
+172.18.0.1:48384 - - [11/Feb/2024:22:34:37] "POST /register/" 200 89
+172.18.0.1:60272 - - [11/Feb/2024:22:50:10] "POST /register/" 200 91
+172.18.0.1:46590 - - [11/Feb/2024:22:51:15] "POST /register/" 200 90
+172.18.0.1:46590 - - [11/Feb/2024:22:52:05] "POST /register/" 200 90
+172.18.0.1:46590 - - [11/Feb/2024:22:52:29] "POST /register/" 200 90
+172.18.0.1:38234 - - [11/Feb/2024:22:55:33] "POST /register/" 200 90
+172.18.0.1:38234 - - [11/Feb/2024:22:55:59] "POST /register/" 200 90
+172.18.0.1:56564 - - [11/Feb/2024:22:57:23] "POST /register/" 200 90
+172.18.0.1:56564 - - [11/Feb/2024:22:58:22] "POST /register/" 200 152
+172.18.0.1:36508 - - [11/Feb/2024:22:59:53] "POST /register/" 200 148
+172.18.0.1:40240 - - [11/Feb/2024:23:40:42] "POST /login/" 200 148
+172.18.0.1:40508 - - [11/Feb/2024:23:43:41] "POST /register/" 200 149
+172.18.0.1:52778 - - [11/Feb/2024:23:51:31] "POST /login/" 200 120
+172.18.0.1:52778 - - [11/Feb/2024:23:52:09] "POST /login/" 200 120
+172.18.0.1:52778 - - [11/Feb/2024:23:52:26] "POST /login/" 200 148
+172.18.0.1:52778 - - [11/Feb/2024:23:53:00] "POST /login/" 200 119
+172.18.0.1:59468 - - [11/Feb/2024:23:55:19] "POST /login/" 200 120
+172.18.0.1:59496 - - [11/Feb/2024:23:56:44] "POST /login/" 200 119
+172.18.0.1:59496 - - [11/Feb/2024:23:57:42] "POST /login/" 200 120
+172.18.0.1:42860 - - [12/Feb/2024:00:02:08] "POST /login/" 200 121
+172.18.0.1:50468 - - [12/Feb/2024:00:06:25] "POST /login/" 200 122
+Welcome To GreaterWMS
+2024-02-12 15:11:35,221 INFO     Starting server at tcp:port=8008:interface=0.0.0.0
+2024-02-12 15:11:35,222 INFO     HTTP/2 support enabled
+2024-02-12 15:11:35,222 INFO     Configuring endpoint tcp:port=8008:interface=0.0.0.0
+2024-02-12 15:11:35,224 INFO     Listening on TCP address 0.0.0.0:8008
+172.18.0.1:41474 - - [12/Feb/2024:15:20:42] "GET /" 200 907
+172.18.0.1:41496 - - [12/Feb/2024:15:20:42] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:41488 - - [12/Feb/2024:15:20:42] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:41474 - - [12/Feb/2024:15:20:42] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:41500 - - [12/Feb/2024:15:20:43] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:41488 - - [12/Feb/2024:15:20:44] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:41496 - - [12/Feb/2024:15:20:44] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:41488 - - [12/Feb/2024:15:20:44] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:41474 - - [12/Feb/2024:15:20:44] "GET /js/62.846260f9.js" 200 361455
+172.18.0.1:41488 - - [12/Feb/2024:15:20:45] "GET /fonts/KFOmCnqEu92Fr1Mu4mxM.f1e2a767.woff" 200 20344
+172.18.0.1:41496 - - [12/Feb/2024:15:20:45] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:41474 - - [12/Feb/2024:15:20:45] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:39426 - - [12/Feb/2024:15:20:45] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:39426 - - [12/Feb/2024:15:20:45] "GET /fonts/KFOlCnqEu92Fr1MmEU9fBBc-.48af7707.woff" 200 20544
+172.18.0.1:41488 - - [12/Feb/2024:15:20:45] "GET /fonts/KFOlCnqEu92Fr1MmWUlfBBc-.77ecb942.woff" 200 20408
+172.18.0.1:41496 - - [12/Feb/2024:15:20:45] "GET /fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.c08197a9.woff2" 200 128264
+172.18.0.1:39434 - - [12/Feb/2024:15:20:46] "OPTIONS /warehouse/multiple/?max_page=30" 200 -
+172.18.0.1:39434 - - [12/Feb/2024:15:20:47] "GET /warehouse/multiple/?max_page=30" 200 6604
+172.18.0.1:39626 - - [12/Feb/2024:15:22:59] "OPTIONS /login/" 200 -
+172.18.0.1:39636 - - [12/Feb/2024:15:23:00] "POST /login/" 200 148
+172.18.0.1:39636 - - [12/Feb/2024:15:23:16] "POST /login/" 200 121
+172.18.0.1:33014 - - [12/Feb/2024:15:25:40] "POST /login/" 200 103
+172.18.0.1:33014 - - [12/Feb/2024:15:25:49] "POST /login/" 200 148
+172.18.0.1:33014 - - [12/Feb/2024:15:26:15] "POST /login/" 200 102
+172.18.0.1:33014 - - [12/Feb/2024:15:26:31] "POST /login/" 200 148
+172.18.0.1:59838 - - [12/Feb/2024:15:28:14] "POST /login/" 200 103
+172.18.0.1:59838 - - [12/Feb/2024:15:28:26] "POST /login/" 200 104
+172.18.0.1:59838 - - [12/Feb/2024:15:28:29] "POST /login/" 200 104
+172.18.0.1:59838 - - [12/Feb/2024:15:28:36] "POST /login/" 200 148
+172.18.0.1:59838 - - [12/Feb/2024:15:29:28] "POST /login/" 200 102
+172.18.0.1:59838 - - [12/Feb/2024:15:29:33] "POST /login/" 200 102
+172.18.0.1:42466 - - [12/Feb/2024:15:35:05] "POST /login/" 200 104
+172.18.0.1:42466 - - [12/Feb/2024:15:35:44] "POST /login/" 200 103
+172.18.0.1:42466 - - [12/Feb/2024:15:36:41] "POST /login/" 200 104
+172.18.0.1:49976 - - [12/Feb/2024:15:38:40] "POST /login/" 200 148
+172.18.0.1:49976 - - [12/Feb/2024:15:38:54] "POST /login/" 200 102
+172.18.0.1:49976 - - [12/Feb/2024:15:38:59] "POST /login/" 200 124
+172.18.0.1:49976 - - [12/Feb/2024:15:39:03] "POST /login/" 200 126
+172.18.0.1:49976 - - [12/Feb/2024:15:39:10] "POST /login/" 200 106
+172.18.0.1:49976 - - [12/Feb/2024:15:39:13] "POST /login/" 200 108
+172.18.0.1:49976 - - [12/Feb/2024:15:39:16] "POST /login/" 200 129
+172.18.0.1:49976 - - [12/Feb/2024:15:39:24] "POST /login/" 200 122
+172.18.0.1:49976 - - [12/Feb/2024:15:39:37] "POST /login/" 200 148
+172.18.0.1:34750 - - [12/Feb/2024:15:40:38] "POST /login/" 200 101
+172.18.0.1:34750 - - [12/Feb/2024:15:41:14] "POST /login/" 200 103
+172.18.0.1:34750 - - [12/Feb/2024:15:41:23] "POST /login/" 200 148
+172.18.0.1:34750 - - [12/Feb/2024:15:42:15] "OPTIONS /register/" 200 -
+172.18.0.1:34750 - - [12/Feb/2024:15:42:17] "POST /register/" 200 157
+172.18.0.1:49228 - - [12/Feb/2024:15:49:12] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:18] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:19] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:25] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:27] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:30] "POST /login/" 200 103
+172.18.0.1:49228 - - [12/Feb/2024:15:49:41] "POST /login/" 200 104
+172.18.0.1:49228 - - [12/Feb/2024:15:49:46] "POST /login/" 200 119
+172.18.0.1:49228 - - [12/Feb/2024:15:49:55] "POST /login/" 200 148
+172.18.0.1:49228 - - [12/Feb/2024:15:50:42] "POST /register/" 200 158
+172.18.0.1:58316 - - [12/Feb/2024:15:51:15] "GET /js/65.cefabe15.js" 200 1577
+172.18.0.1:44402 - - [12/Feb/2024:15:51:15] "GET /js/68.fa561918.js" 200 2260
+172.18.0.1:44402 - - [12/Feb/2024:15:51:15] "GET /statics/dashboard/out_statement.png" 200 4373
+172.18.0.1:58316 - - [12/Feb/2024:15:51:15] "GET /statics/dashboard/in_statement.svg" 200 1026
+172.18.0.1:44408 - - [12/Feb/2024:15:51:15] "GET /statics/dashboard/in_and_out_statement.svg" 200 918
+172.18.0.1:44402 - - [12/Feb/2024:15:51:15] "GET /fonts/KFOlCnqEu92Fr1MmYUtfBBc-.f5677eb2.woff" 200 20424
+172.18.0.1:44402 - - [12/Feb/2024:15:52:07] "GET /js/74.024f217b.js" 200 2792
+172.18.0.1:58316 - - [12/Feb/2024:15:52:07] "GET /js/34.cc91ab04.js" 200 52141
+172.18.0.1:44402 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/freshorder.png" 200 2509
+172.18.0.1:44408 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/order.png" 200 5273
+172.18.0.1:58316 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/dnlist.png" 200 3836
+172.18.0.1:56912 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/pickstock.png" 200 3840
+172.18.0.1:56900 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/backorder.png" 200 5160
+172.18.0.1:56916 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/picked.png" 200 4644
+172.18.0.1:44408 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/outbound.png" 200 5681
+172.18.0.1:44402 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/pickinglist.png" 200 12504
+172.18.0.1:56912 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/orderrelease.png" 200 6268
+172.18.0.1:58316 - - [12/Feb/2024:15:52:08] "GET /statics/outbound/receiving.png" 200 7402
+172.18.0.1:58316 - - [12/Feb/2024:15:52:10] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:44402 - - [12/Feb/2024:15:52:10] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:58316 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:44402 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:56912 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:44408 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:56900 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:56916 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:58316 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:44402 - - [12/Feb/2024:15:52:10] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:52830 - - [12/Feb/2024:15:52:18] "GET /api/docs/" 200 695
+172.18.0.1:52814 - - [12/Feb/2024:15:52:19] "GET /static/drf_spectacular_sidecar/redoc/bundles/redoc.standalone.js" 200 1042511
+/GreaterWMS/./asn/views.py: Warning [AsnDetailViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+172.18.0.1:52830 - - [12/Feb/2024:15:52:20] "GET /favicon.ico" 200 9411
+/GreaterWMS/./asn/views.py: Warning [FileDetailDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [FileListDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [AsnListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [MoveToBinViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [AsnPreLoadViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [AsnPreSortViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [AsnSortedViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./asn/views.py: Warning [AsnViewPrintViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binproperty/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binset/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binset/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binset/views.py: Warning [ScannerBinsetTagView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binsize/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./binsize/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./capital/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./capital/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./company/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./customer/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./customer/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Warning [CyclecountModeDayViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Warning [CyclecountModeAllViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Warning [FileDownloadAllView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/serializers.py: Warning [FileDownloadAllView > FileRenderSerializer]: unable to resolve type hint for function "get_physical_inventory". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./cyclecount/serializers.py: Warning [FileDownloadAllView > FileRenderSerializer]: unable to resolve type hint for function "get_difference". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./cyclecount/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Warning [GetGoodsCyclecountViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./stock/serializers.py: Warning [GetGoodsCyclecountViewSet > StockBinGetSerializer]: unable to resolve type hint for function "get_qty". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./cyclecount/views.py: Warning [ManualCyclecountViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Error [ManualCyclecountViewSet]: exception raised while getting serializer. Hint: Is get_serializer_class() returning None or is get_queryset() not working without a request? Ignoring the view for now. (Exception: ManualCyclecountModeModel() got unexpected keyword arguments: 'context')
+/GreaterWMS/./cyclecount/views.py: Warning [ManualCyclecountRecorderViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/views.py: Warning [ManualFileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./cyclecount/serializers.py: Warning [ManualFileDownloadView > ManualFileRenderSerializer]: unable to resolve type hint for function "get_physical_inventory". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./cyclecount/serializers.py: Warning [ManualFileDownloadView > ManualFileRenderSerializer]: unable to resolve type hint for function "get_difference". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./cyclecount/views.py: Warning [QTYRecorderViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dashboard/views.py: Warning [ReceiptsViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dashboard/views.py: Warning [SalesViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnDetailViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnDispatchViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [FileDetailDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [FileListDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnNewOrderViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnOrderReleaseViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnPickedViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnPickingListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnPickingListFilterViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnPODViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./dn/views.py: Warning [DnViewPrintViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./driver/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./driver/views.py: Warning [DispatchListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./driver/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goods/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goods/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goods/views.py: Warning [SannerGoodsTagView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsbrand/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsclass/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodscolor/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsorigin/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsshape/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsspecs/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./goodsunit/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./payment/views.py: Warning [TransportationFeeListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./payment/views.py: Warning [FreightfileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./scanner/views.py: Warning [ListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./scanner/serializers.py: Warning [ListViewSet > ListGetSerializer]: unable to resolve type hint for function "get_request_time". Consider using a type hint or @extend_schema_field. Defaulting to string.
+/GreaterWMS/./scanner/views.py: Warning [SannerView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./scanner/views.py: Warning [SannerDnDetailPickingListView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./staff/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./staff/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./staff/views.py: Warning [TypeAPIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./stock/views.py: Warning [StockBinViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./stock/views.py: Warning [FileBinListDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./stock/views.py: Warning [FileListDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./stock/views.py: Warning [StockListViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./supplier/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./supplier/views.py: Warning [FileDownloadView]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [CapitalfileViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [CapitalfileViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [CapitalfileAddViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [CapitalfileAddViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [CustomerfileViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [CustomerfileViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [CustomerfileAddViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [CustomerfileAddViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [FreightfileViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [FreightfileViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [FreightfileAddViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [FreightfileAddViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [GoodlistfileViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [GoodlistfileViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [GoodlistfileAddViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [GoodlistfileAddViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [SupplierfileViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [SupplierfileViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./uploadfile/views.py: Error [SupplierfileAddViewSet]: unable to guess serializer. This is graceful fallback handling for APIViews. Consider using GenericAPIView as view base class, if view is under your control. Either way you may want to add a serializer_class (or method). Ignoring view for now.
+/GreaterWMS/./uploadfile/views.py: Warning [SupplierfileAddViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+/GreaterWMS/./warehouse/views.py: Warning [APIViewSet]: could not resolve authenticator <class 'utils.auth.Authtication'>. There was no OpenApiAuthenticationExtension registered for that class. Try creating one by subclassing it. Ignoring for now.
+Warning: operationId "dn_picked_update" has collisions [('/dn/picked/', 'put'), ('/dn/picked/{id}/', 'put')]. resolving with numeral suffixes.
+172.18.0.1:52814 - - [12/Feb/2024:15:52:27] "GET /api/" 200 786804
+172.18.0.1:49956 - - [12/Feb/2024:15:53:16] "GET /js/66.d9f4a474.js" 200 2269
+172.18.0.1:49956 - - [12/Feb/2024:15:53:18] "GET /js/67.ae6406c3.js" 200 6851
+172.18.0.1:49956 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:53040 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:53058 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:53084 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:53046 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:53102 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:53072 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:53092 - - [12/Feb/2024:15:53:25] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:49956 - - [12/Feb/2024:15:53:31] "GET /js/28.4d7700ec.js" 200 7715
+172.18.0.1:49956 - - [12/Feb/2024:15:53:34] "GET /js/29.3a2fa76d.js" 200 7721
+172.18.0.1:49956 - - [12/Feb/2024:15:53:35] "GET /js/30.e0c55128.js" 200 7718
+172.18.0.1:49956 - - [12/Feb/2024:15:53:36] "GET /js/32.2bdad5bd.js" 200 11402
+172.18.0.1:49956 - - [12/Feb/2024:15:53:39] "GET /js/31.68e14c12.js" 200 7777
+172.18.0.1:49956 - - [12/Feb/2024:15:53:40] "GET /js/27.22acbb2f.js" 200 7755
+172.18.0.1:49956 - - [12/Feb/2024:15:53:41] "GET /js/26.b9bcc1f5.js" 200 8242
+172.18.0.1:43380 - - [12/Feb/2024:15:54:00] "OPTIONS /login/" 200 -
+172.18.0.1:43382 - - [12/Feb/2024:15:54:00] "POST /login/" 200 148
+172.18.0.1:49956 - - [12/Feb/2024:15:54:01] "GET /" 200 907
+172.18.0.1:53072 - - [12/Feb/2024:15:54:01] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:53092 - - [12/Feb/2024:15:54:02] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:49956 - - [12/Feb/2024:15:54:02] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:53102 - - [12/Feb/2024:15:54:02] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:53092 - - [12/Feb/2024:15:54:02] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:53092 - - [12/Feb/2024:15:54:02] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:49956 - - [12/Feb/2024:15:54:02] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:53102 - - [12/Feb/2024:15:54:02] "GET /js/62.846260f9.js" 200 361455
+172.18.0.1:53102 - - [12/Feb/2024:15:54:02] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:49956 - - [12/Feb/2024:15:54:02] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:53072 - - [12/Feb/2024:15:54:02] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:43380 - - [12/Feb/2024:15:54:03] "OPTIONS /staff/?staff_name=bachir" 200 -
+172.18.0.1:43382 - - [12/Feb/2024:15:54:03] "GET /warehouse/multiple/?max_page=30" 200 7262
+172.18.0.1:43380 - - [12/Feb/2024:15:54:04] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:53102 - - [12/Feb/2024:15:54:06] "GET /statics/staff/stafftype.png" 200 5872
+172.18.0.1:53072 - - [12/Feb/2024:15:54:06] "GET /statics/icons/logout.png" 200 3153
+172.18.0.1:49956 - - [12/Feb/2024:15:54:12] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:53102 - - [12/Feb/2024:15:54:12] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:53102 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:49956 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:53072 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:53046 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:53040 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:53058 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:43380 - - [12/Feb/2024:15:54:12] "OPTIONS /asn/list/?page=1" 200 -
+172.18.0.1:53102 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:49956 - - [12/Feb/2024:15:54:12] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:43380 - - [12/Feb/2024:15:54:12] "GET /asn/list/?page=1" 200 840
+172.18.0.1:33736 - - [12/Feb/2024:15:55:21] "OPTIONS /asn/list/" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:55:22] "POST /asn/list/" 200 337
+172.18.0.1:33752 - - [12/Feb/2024:15:56:05] "POST /asn/list/" 200 337
+172.18.0.1:33736 - - [12/Feb/2024:15:56:18] "OPTIONS /goods/?goods_code__icontains=9" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:18] "OPTIONS /goods/?goods_code__icontains=98" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:18] "GET /goods/?goods_code__icontains=9" 200 4275
+172.18.0.1:33752 - - [12/Feb/2024:15:56:18] "OPTIONS /goods/?goods_code__icontains=989" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:18] "GET /goods/?goods_code__icontains=98" 200 2067
+172.18.0.1:33752 - - [12/Feb/2024:15:56:18] "GET /goods/?goods_code__icontains=989" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:19] "OPTIONS /goods/?goods_code__icontains=9897" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:19] "OPTIONS /goods/?goods_code__icontains=98976" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:19] "GET /goods/?goods_code__icontains=9897" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:19] "GET /goods/?goods_code__icontains=98976" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:19] "OPTIONS /goods/?goods_code__icontains=98976y" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:19] "GET /goods/?goods_code__icontains=98976y" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:20] "OPTIONS /goods/?goods_code__icontains=98976yg" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:20] "OPTIONS /goods/?goods_code__icontains=98976ygd" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:20] "GET /goods/?goods_code__icontains=98976yg" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:20] "GET /goods/?goods_code__icontains=98976ygd" 200 2067
+172.18.0.1:33752 - - [12/Feb/2024:15:56:21] "GET /goods/?goods_code__icontains=98976yg" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:21] "GET /goods/?goods_code__icontains=98976y" 200 2067
+172.18.0.1:33752 - - [12/Feb/2024:15:56:21] "GET /goods/?goods_code__icontains=98976" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:23] "OPTIONS /goods/?goods_code__icontains=98976a" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:23] "OPTIONS /goods/?goods_code__icontains=98976as" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:23] "GET /goods/?goods_code__icontains=98976a" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:23] "GET /goods/?goods_code__icontains=98976as" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:23] "OPTIONS /goods/?goods_code__icontains=98976asd" 200 -
+172.18.0.1:33752 - - [12/Feb/2024:15:56:23] "GET /goods/?goods_code__icontains=98976asd" 200 2067
+172.18.0.1:33736 - - [12/Feb/2024:15:56:28] "OPTIONS /goods/?goods_code__icontains=" 200 -
+172.18.0.1:33736 - - [12/Feb/2024:15:56:29] "GET /goods/?goods_code__icontains=" 200 18832
+172.18.0.1:56988 - - [12/Feb/2024:15:58:59] "OPTIONS /goods/?goods_code__icontains=0" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:58:59] "OPTIONS /goods/?goods_code__icontains=00" 200 -
+172.18.0.1:57008 - - [12/Feb/2024:15:58:59] "OPTIONS /goods/?goods_code__icontains=001" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:58:59] "GET /goods/?goods_code__icontains=0" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:15:58:59] "GET /goods/?goods_code__icontains=00" 200 18834
+172.18.0.1:57022 - - [12/Feb/2024:15:58:59] "GET /goods/?goods_code__icontains=001" 200 8192
+172.18.0.1:56988 - - [12/Feb/2024:15:59:04] "GET /goods/?goods_code__icontains=" 200 18832
+172.18.0.1:56988 - - [12/Feb/2024:15:59:08] "GET /goods/?goods_code__icontains=0" 200 18833
+172.18.0.1:57004 - - [12/Feb/2024:15:59:08] "GET /goods/?goods_code__icontains=00" 200 18834
+172.18.0.1:56988 - - [12/Feb/2024:15:59:08] "GET /goods/?goods_code__icontains=001" 200 8192
+172.18.0.1:56988 - - [12/Feb/2024:15:59:10] "OPTIONS /goods/?goods_code__icontains=a000019" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:11] "GET /goods/?goods_code__icontains=a000019" 200 2619
+172.18.0.1:56988 - - [12/Feb/2024:15:59:19] "OPTIONS /goods/?goods_code__icontains=a" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:19] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:15:59:19] "GET /goods/?goods_code__icontains=" 200 18832
+172.18.0.1:57004 - - [12/Feb/2024:15:59:21] "GET /goods/?goods_code__icontains=0" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:15:59:21] "OPTIONS /goods/?goods_code__icontains=09" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:21] "GET /goods/?goods_code__icontains=09" 200 2619
+172.18.0.1:56988 - - [12/Feb/2024:15:59:21] "OPTIONS /goods/?goods_code__icontains=099" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:21] "OPTIONS /goods/?goods_code__icontains=0999" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:22] "GET /goods/?goods_code__icontains=099" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:22] "GET /goods/?goods_code__icontains=0999" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:23] "OPTIONS /goods/?goods_code__icontains=09998" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:23] "OPTIONS /goods/?goods_code__icontains=099987" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:23] "GET /goods/?goods_code__icontains=09998" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:23] "GET /goods/?goods_code__icontains=099987" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:23] "OPTIONS /goods/?goods_code__icontains=0999876" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:23] "GET /goods/?goods_code__icontains=0999876" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:25] "GET /goods/?goods_code__icontains=" 200 18832
+172.18.0.1:57004 - - [12/Feb/2024:15:59:28] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:15:59:29] "OPTIONS /goods/?goods_code__icontains=a000041" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:30] "GET /goods/?goods_code__icontains=a000041" 200 2625
+172.18.0.1:56988 - - [12/Feb/2024:15:59:34] "OPTIONS /goods/?goods_code__icontains=a00004" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:35] "OPTIONS /goods/?goods_code__icontains=a0000" 200 -
+172.18.0.1:57004 - - [12/Feb/2024:15:59:35] "GET /goods/?goods_code__icontains=a00004" 200 3745
+172.18.0.1:56988 - - [12/Feb/2024:15:59:35] "GET /goods/?goods_code__icontains=a0000" 200 18837
+172.18.0.1:56988 - - [12/Feb/2024:15:59:35] "OPTIONS /goods/?goods_code__icontains=a00000" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:36] "GET /goods/?goods_code__icontains=a00000" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:36] "OPTIONS /goods/?goods_code__icontains=a000001" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:36] "GET /goods/?goods_code__icontains=a000001" 200 2067
+172.18.0.1:56988 - - [12/Feb/2024:15:59:38] "GET /goods/?goods_code__icontains=a00004" 200 3745
+172.18.0.1:56988 - - [12/Feb/2024:15:59:54] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:15:59:54] "OPTIONS /goods/?goods_code__icontains=a0" 200 -
+172.18.0.1:57008 - - [12/Feb/2024:15:59:54] "OPTIONS /goods/?goods_code__icontains=a00" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:55] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:57004 - - [12/Feb/2024:15:59:55] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:56988 - - [12/Feb/2024:15:59:56] "OPTIONS /goods/?goods_code__icontains=a000037" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:15:59:57] "GET /goods/?goods_code__icontains=a000037" 200 2621
+172.18.0.1:56988 - - [12/Feb/2024:16:00:03] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:16:00:05] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:57004 - - [12/Feb/2024:16:00:05] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:56988 - - [12/Feb/2024:16:00:06] "OPTIONS /goods/?goods_code__icontains=a000035" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:00:07] "GET /goods/?goods_code__icontains=a000035" 200 2623
+172.18.0.1:56988 - - [12/Feb/2024:16:00:14] "OPTIONS /asn/detail/" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:00:14] "POST /asn/detail/" 200 55
+172.18.0.1:56988 - - [12/Feb/2024:16:00:15] "GET /asn/list/?page=1" 200 840
+172.18.0.1:56988 - - [12/Feb/2024:16:00:22] "POST /asn/list/" 200 337
+172.18.0.1:56988 - - [12/Feb/2024:16:00:28] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:16:00:29] "OPTIONS /goods/?goods_code__icontains=a000040" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:00:29] "GET /goods/?goods_code__icontains=a000040" 200 2627
+172.18.0.1:56988 - - [12/Feb/2024:16:00:32] "POST /asn/detail/" 200 20
+172.18.0.1:56988 - - [12/Feb/2024:16:00:32] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:00:59] "OPTIONS /asn/viewprint/3/" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:01:00] "GET /asn/viewprint/3/" 200 742
+172.18.0.1:56988 - - [12/Feb/2024:16:01:53] "GET /asn/viewprint/3/" 200 742
+172.18.0.1:56988 - - [12/Feb/2024:16:02:26] "OPTIONS /asn/detail/?asn_code=ASN202402123" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:02:26] "GET /asn/detail/?asn_code=ASN202402123" 200 458
+172.18.0.1:56988 - - [12/Feb/2024:16:02:27] "GET /goods/?goods_code__icontains=a000040" 200 2627
+172.18.0.1:56988 - - [12/Feb/2024:16:02:31] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:16:02:32] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:49394 - - [12/Feb/2024:16:02:32] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:56988 - - [12/Feb/2024:16:02:35] "OPTIONS /goods/?goods_code__icontains=a000038" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:02:35] "GET /goods/?goods_code__icontains=a000038" 200 2621
+172.18.0.1:56988 - - [12/Feb/2024:16:02:37] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:16:02:38] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:49394 - - [12/Feb/2024:16:02:38] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:56988 - - [12/Feb/2024:16:02:41] "OPTIONS /goods/?goods_code__icontains=a000016" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:02:42] "GET /goods/?goods_code__icontains=a000016" 200 2625
+172.18.0.1:56988 - - [12/Feb/2024:16:02:44] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:56988 - - [12/Feb/2024:16:02:45] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:49394 - - [12/Feb/2024:16:02:45] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:56988 - - [12/Feb/2024:16:02:46] "GET /goods/?goods_code__icontains=a000035" 200 2623
+172.18.0.1:56988 - - [12/Feb/2024:16:02:54] "PUT /asn/detail/" 200 20
+172.18.0.1:56988 - - [12/Feb/2024:16:02:54] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:00] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:01] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:02] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:03] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:09] "GET /asn/viewprint/3/" 200 1932
+172.18.0.1:56988 - - [12/Feb/2024:16:03:17] "POST /asn/list/" 200 337
+172.18.0.1:41594 - - [12/Feb/2024:16:03:30] "GET /js/74.024f217b.js" 200 2792
+172.18.0.1:41598 - - [12/Feb/2024:16:03:30] "GET /js/34.cc91ab04.js" 200 52141
+172.18.0.1:41608 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/order.png" 200 5273
+172.18.0.1:41598 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/dnlist.png" 200 3836
+172.18.0.1:41594 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/freshorder.png" 200 2509
+172.18.0.1:41630 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/pickstock.png" 200 3840
+172.18.0.1:56988 - - [12/Feb/2024:16:03:30] "OPTIONS /dn/list/?page=1" 200 -
+172.18.0.1:41616 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/backorder.png" 200 5160
+172.18.0.1:41642 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/picked.png" 200 4644
+172.18.0.1:41608 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/pickinglist.png" 200 12504
+172.18.0.1:41598 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/outbound.png" 200 5681
+172.18.0.1:41594 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/receiving.png" 200 7402
+172.18.0.1:41630 - - [12/Feb/2024:16:03:30] "GET /statics/outbound/orderrelease.png" 200 6268
+172.18.0.1:56988 - - [12/Feb/2024:16:03:30] "GET /dn/list/?page=1" 200 840
+172.18.0.1:41608 - - [12/Feb/2024:16:03:31] "GET /js/68.fa561918.js" 200 2260
+172.18.0.1:41598 - - [12/Feb/2024:16:03:31] "GET /js/65.cefabe15.js" 200 1577
+172.18.0.1:41598 - - [12/Feb/2024:16:03:31] "GET /statics/dashboard/out_statement.png" 200 4373
+172.18.0.1:41608 - - [12/Feb/2024:16:03:31] "GET /statics/dashboard/in_statement.svg" 200 1026
+172.18.0.1:41594 - - [12/Feb/2024:16:03:31] "GET /statics/dashboard/in_and_out_statement.svg" 200 918
+172.18.0.1:41598 - - [12/Feb/2024:16:03:31] "GET /fonts/KFOlCnqEu92Fr1MmYUtfBBc-.f5677eb2.woff" 200 20424
+172.18.0.1:56988 - - [12/Feb/2024:16:03:31] "OPTIONS /dashboard/sales/" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:31] "GET /dashboard/sales/" 200 64
+172.18.0.1:56988 - - [12/Feb/2024:16:03:33] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:03:36] "GET /dn/list/?page=1" 200 840
+172.18.0.1:56988 - - [12/Feb/2024:16:03:41] "GET /dashboard/sales/" 200 64
+172.18.0.1:56988 - - [12/Feb/2024:16:03:42] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:41598 - - [12/Feb/2024:16:03:43] "GET /js/28.4d7700ec.js" 200 7715
+172.18.0.1:56988 - - [12/Feb/2024:16:03:43] "OPTIONS /asn/detail/?asn_status=1&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:43] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:41598 - - [12/Feb/2024:16:03:46] "GET /js/29.3a2fa76d.js" 200 7721
+172.18.0.1:56988 - - [12/Feb/2024:16:03:46] "OPTIONS /asn/detail/?asn_status=2&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:46] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:41598 - - [12/Feb/2024:16:03:48] "GET /js/30.e0c55128.js" 200 7718
+172.18.0.1:56988 - - [12/Feb/2024:16:03:48] "OPTIONS /asn/detail/?asn_status=3&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:48] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:41598 - - [12/Feb/2024:16:03:49] "GET /js/32.2bdad5bd.js" 200 11402
+172.18.0.1:56988 - - [12/Feb/2024:16:03:49] "OPTIONS /asn/detail/?asn_status=4&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:49] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:41598 - - [12/Feb/2024:16:03:51] "GET /js/31.68e14c12.js" 200 7777
+172.18.0.1:56988 - - [12/Feb/2024:16:03:51] "OPTIONS /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:51] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 52
+172.18.0.1:41598 - - [12/Feb/2024:16:03:52] "GET /js/27.22acbb2f.js" 200 7755
+172.18.0.1:56988 - - [12/Feb/2024:16:03:52] "OPTIONS /asn/detail/?goods_more_qty__gt=0&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:52] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:41598 - - [12/Feb/2024:16:03:52] "GET /js/26.b9bcc1f5.js" 200 8242
+172.18.0.1:56988 - - [12/Feb/2024:16:03:53] "OPTIONS /asn/detail/?asn_status=5&ordering=-id&page=1" 200 -
+172.18.0.1:56988 - - [12/Feb/2024:16:03:53] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:03:54] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:04:41] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:56988 - - [12/Feb/2024:16:04:41] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:42] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:56988 - - [12/Feb/2024:16:04:51] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:53] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:54] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:55] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:56] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:57] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:04:58] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:05:05] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:56988 - - [12/Feb/2024:16:05:06] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:07] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:07] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:08] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:09] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:12] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:56988 - - [12/Feb/2024:16:05:46] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:56988 - - [12/Feb/2024:16:05:49] "POST /asn/list/" 200 337
+172.18.0.1:56988 - - [12/Feb/2024:16:05:54] "POST /asn/list/" 200 337
+172.18.0.1:56988 - - [12/Feb/2024:16:06:01] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:56988 - - [12/Feb/2024:16:06:02] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:57262 - - [12/Feb/2024:16:06:21] "POST /login/" 200 148
+172.18.0.1:48950 - - [12/Feb/2024:16:08:38] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:48950 - - [12/Feb/2024:16:08:39] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:48950 - - [12/Feb/2024:16:08:40] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:48950 - - [12/Feb/2024:16:08:41] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:48950 - - [12/Feb/2024:16:08:41] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:48950 - - [12/Feb/2024:16:08:42] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:48950 - - [12/Feb/2024:16:08:52] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:48950 - - [12/Feb/2024:16:08:52] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:48950 - - [12/Feb/2024:16:08:53] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:44518 - - [12/Feb/2024:16:14:07] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:49436 - - [12/Feb/2024:16:20:24] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:49436 - - [12/Feb/2024:16:20:28] "GET /asn/viewprint/3/" 200 1932
+172.18.0.1:49436 - - [12/Feb/2024:16:20:47] "GET /asn/viewprint/3/" 200 1932
+172.18.0.1:49436 - - [12/Feb/2024:16:20:56] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:48880 - - [12/Feb/2024:16:22:04] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:48880 - - [12/Feb/2024:16:22:07] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:48880 - - [12/Feb/2024:16:22:09] "GET /asn/detail/?asn_status=1&page=1" 200 1648
+172.18.0.1:48880 - - [12/Feb/2024:16:22:12] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:48880 - - [12/Feb/2024:16:22:21] "OPTIONS /asn/preload/3/" 200 -
+172.18.0.1:48880 - - [12/Feb/2024:16:22:21] "POST /asn/preload/3/" 200 447
+172.18.0.1:48880 - - [12/Feb/2024:16:22:22] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:48880 - - [12/Feb/2024:16:22:24] "GET /asn/detail/?asn_status=1&page=1" 200 52
+172.18.0.1:48880 - - [12/Feb/2024:16:22:28] "GET /asn/detail/?asn_status=2&page=1" 200 1648
+172.18.0.1:48880 - - [12/Feb/2024:16:22:29] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:48880 - - [12/Feb/2024:16:22:36] "GET /asn/detail/?asn_status=1&page=1" 200 52
+172.18.0.1:48880 - - [12/Feb/2024:16:22:40] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:48880 - - [12/Feb/2024:16:22:55] "GET /asn/detail/?asn_status=2&page=1" 200 1648
+172.18.0.1:36586 - - [12/Feb/2024:16:24:50] "GET /asn/detail/?asn_status=1&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:24:51] "GET /asn/detail/?asn_status=2&page=1" 200 1648
+172.18.0.1:36586 - - [12/Feb/2024:16:24:55] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:36586 - - [12/Feb/2024:16:25:03] "GET /asn/detail/?asn_status=2&page=1" 200 1648
+172.18.0.1:36586 - - [12/Feb/2024:16:25:04] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:36586 - - [12/Feb/2024:16:25:07] "OPTIONS /asn/presort/3/" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:25:07] "POST /asn/presort/3/" 200 447
+172.18.0.1:36586 - - [12/Feb/2024:16:25:08] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:36586 - - [12/Feb/2024:16:25:11] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:12] "GET /asn/detail/?asn_status=3&page=1" 200 1648
+172.18.0.1:36586 - - [12/Feb/2024:16:25:20] "GET /asn/list/?page=1" 200 1229
+172.18.0.1:36586 - - [12/Feb/2024:16:25:25] "GET /asn/detail/?asn_code=ASN202402123" 200 1648
+172.18.0.1:36586 - - [12/Feb/2024:16:25:28] "OPTIONS /asn/sorted/3/" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:25:29] "POST /asn/sorted/3/" 200 20
+172.18.0.1:36586 - - [12/Feb/2024:16:25:29] "GET /asn/list/?page=1" 200 1238
+172.18.0.1:36586 - - [12/Feb/2024:16:25:31] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:32] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:34] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 1654
+172.18.0.1:36586 - - [12/Feb/2024:16:25:36] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:37] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:36586 - - [12/Feb/2024:16:25:38] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:42] "GET /asn/list/?page=1" 200 1238
+172.18.0.1:36586 - - [12/Feb/2024:16:25:48] "GET /asn/viewprint/3/" 200 1938
+172.18.0.1:36586 - - [12/Feb/2024:16:25:51] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:25:53] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:36586 - - [12/Feb/2024:16:25:58] "GET /asn/list/?page=1" 200 1238
+172.18.0.1:57216 - - [12/Feb/2024:16:26:00] "GET /statics/outbound/order.png" 200 5273
+172.18.0.1:57208 - - [12/Feb/2024:16:26:00] "GET /statics/outbound/freshorder.png" 200 2509
+172.18.0.1:57192 - - [12/Feb/2024:16:26:00] "GET /statics/outbound/dnlist.png" 200 3836
+172.18.0.1:57228 - - [12/Feb/2024:16:26:00] "GET /statics/outbound/backorder.png" 200 5160
+172.18.0.1:57236 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/pickstock.png" 200 3840
+172.18.0.1:57260 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/outbound.png" 200 5681
+172.18.0.1:57258 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/pickinglist.png" 200 12504
+172.18.0.1:57272 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/receiving.png" 200 7402
+172.18.0.1:57248 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/picked.png" 200 4644
+172.18.0.1:57216 - - [12/Feb/2024:16:26:01] "GET /statics/outbound/orderrelease.png" 200 6268
+172.18.0.1:36586 - - [12/Feb/2024:16:26:01] "GET /dn/list/?page=1" 200 840
+172.18.0.1:57258 - - [12/Feb/2024:16:26:02] "GET /js/35.02300062.js" 200 7707
+172.18.0.1:36586 - - [12/Feb/2024:16:26:02] "OPTIONS /dn/detail/?dn_status=1&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:02] "GET /dn/detail/?dn_status=1&page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:02] "GET /js/36.78f8cdcd.js" 200 7712
+172.18.0.1:36586 - - [12/Feb/2024:16:26:02] "OPTIONS /dn/detail/?dn_status=2&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:03] "GET /dn/detail/?dn_status=2&page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:03] "GET /js/33.9aa1a7f7.js" 200 9427
+172.18.0.1:36586 - - [12/Feb/2024:16:26:03] "OPTIONS /dn/detail/?dn_status=2&back_order_label=true&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:03] "GET /dn/detail/?dn_status=2&back_order_label=true&page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:03] "GET /js/39.3f6bd43a.js" 200 7706
+172.18.0.1:36586 - - [12/Feb/2024:16:26:04] "OPTIONS /dn/detail/?dn_status=3&pick_qty__gt=0&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:04] "GET /dn/detail/?dn_status=3&pick_qty__gt=0&page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:04] "GET /js/37.30291faa.js" 200 7505
+172.18.0.1:36586 - - [12/Feb/2024:16:26:04] "OPTIONS /dn/detail/?dn_status=4&picked_qty__gt=0&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:04] "GET /dn/detail/?dn_status=4&picked_qty__gt=0&page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:04] "GET /js/38.a129e4e9.js" 200 7267
+172.18.0.1:36586 - - [12/Feb/2024:16:26:05] "OPTIONS /dn/pickinglistfilter/?page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:05] "GET /dn/pickinglistfilter/?page=1" 200 52
+172.18.0.1:57258 - - [12/Feb/2024:16:26:06] "GET /js/41.958800c3.js" 200 7522
+172.18.0.1:36586 - - [12/Feb/2024:16:26:06] "OPTIONS /dn/detail/?dn_status=5&intransit_qty__gte=0&page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:26:06] "GET /dn/detail/?dn_status=5&intransit_qty__gte=0&page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:26:07] "GET /dn/list/?page=1" 200 840
+172.18.0.1:36586 - - [12/Feb/2024:16:26:08] "GET /asn/list/?page=1" 200 1238
+172.18.0.1:57258 - - [12/Feb/2024:16:27:04] "GET /statics/dashboard/out_statement.png" 200 4373
+172.18.0.1:47656 - - [12/Feb/2024:16:27:04] "GET /statics/dashboard/in_statement.svg" 200 1026
+172.18.0.1:47658 - - [12/Feb/2024:16:27:04] "GET /statics/dashboard/in_and_out_statement.svg" 200 918
+172.18.0.1:36586 - - [12/Feb/2024:16:27:04] "GET /dashboard/sales/" 200 64
+172.18.0.1:57258 - - [12/Feb/2024:16:27:07] "GET /js/66.d9f4a474.js" 200 2269
+172.18.0.1:36586 - - [12/Feb/2024:16:27:07] "OPTIONS /dashboard/receipts/" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:27:07] "GET /dashboard/receipts/" 200 215
+172.18.0.1:57258 - - [12/Feb/2024:16:27:14] "GET /js/67.ae6406c3.js" 200 6851
+172.18.0.1:36586 - - [12/Feb/2024:16:27:14] "OPTIONS /cyclecount/qtyrecorviewset/?page=1" 200 -
+172.18.0.1:36586 - - [12/Feb/2024:16:27:14] "GET /cyclecount/qtyrecorviewset/?page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:27:16] "GET /cyclecount/qtyrecorviewset/?page=1" 200 52
+172.18.0.1:36586 - - [12/Feb/2024:16:27:21] "GET /asn/list/?page=1" 200 1238
+172.18.0.1:36578 - - [12/Feb/2024:16:35:06] "POST /asn/list/" 200 337
+172.18.0.1:36578 - - [12/Feb/2024:16:35:09] "OPTIONS /goods/?goods_code__icontains=s" 200 -
+172.18.0.1:36580 - - [12/Feb/2024:16:35:09] "OPTIONS /goods/?goods_code__icontains=ss" 200 -
+172.18.0.1:36578 - - [12/Feb/2024:16:35:09] "GET /goods/?goods_code__icontains=s" 200 2067
+172.18.0.1:36586 - - [12/Feb/2024:16:35:10] "GET /goods/?goods_code__icontains=ss" 200 2067
+172.18.0.1:36578 - - [12/Feb/2024:16:35:10] "GET /goods/?goods_code__icontains=s" 200 2067
+172.18.0.1:36586 - - [12/Feb/2024:16:35:11] "GET /goods/?goods_code__icontains=" 200 18832
+172.18.0.1:36586 - - [12/Feb/2024:16:35:11] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:36586 - - [12/Feb/2024:16:35:13] "GET /goods/?goods_code__icontains=a000041" 200 2625
+172.18.0.1:36586 - - [12/Feb/2024:16:35:18] "POST /asn/detail/" 200 20
+172.18.0.1:36580 - - [12/Feb/2024:16:35:18] "GET /asn/list/?page=1" 200 1621
+172.18.0.1:36586 - - [12/Feb/2024:16:35:21] "POST /asn/list/" 200 337
+172.18.0.1:36586 - - [12/Feb/2024:16:35:24] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:36586 - - [12/Feb/2024:16:35:26] "GET /goods/?goods_code__icontains=a000037" 200 2621
+172.18.0.1:36586 - - [12/Feb/2024:16:35:34] "POST /asn/detail/" 200 20
+172.18.0.1:36580 - - [12/Feb/2024:16:35:34] "GET /asn/list/?page=1" 200 2013
+172.18.0.1:36586 - - [12/Feb/2024:16:35:38] "POST /asn/list/" 200 337
+172.18.0.1:36586 - - [12/Feb/2024:16:35:44] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:36586 - - [12/Feb/2024:16:35:47] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:36578 - - [12/Feb/2024:16:35:47] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:36580 - - [12/Feb/2024:16:35:49] "OPTIONS /goods/?goods_code__icontains=a000022" 200 -
+172.18.0.1:36578 - - [12/Feb/2024:16:35:50] "GET /goods/?goods_code__icontains=a000022" 200 2616
+172.18.0.1:36578 - - [12/Feb/2024:16:35:53] "POST /asn/detail/" 200 20
+172.18.0.1:36580 - - [12/Feb/2024:16:35:53] "GET /asn/list/?page=1" 200 2396
+172.18.0.1:36578 - - [12/Feb/2024:16:35:58] "POST /asn/list/" 200 339
+172.18.0.1:36578 - - [12/Feb/2024:16:36:07] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:36578 - - [12/Feb/2024:16:36:08] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:36578 - - [12/Feb/2024:16:36:20] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:36580 - - [12/Feb/2024:16:36:20] "OPTIONS /goods/?goods_code__icontains=a000039" 200 -
+172.18.0.1:36578 - - [12/Feb/2024:16:36:21] "GET /goods/?goods_code__icontains=a000039" 200 2617
+172.18.0.1:36578 - - [12/Feb/2024:16:36:25] "POST /asn/detail/" 200 20
+172.18.0.1:36580 - - [12/Feb/2024:16:36:25] "GET /asn/list/?page=1" 200 2792
+172.18.0.1:36578 - - [12/Feb/2024:16:36:31] "POST /asn/list/" 200 339
+172.18.0.1:36578 - - [12/Feb/2024:16:36:36] "GET /goods/?goods_code__icontains=a" 200 18833
+172.18.0.1:36578 - - [12/Feb/2024:16:36:37] "GET /goods/?goods_code__icontains=a0" 200 18834
+172.18.0.1:36586 - - [12/Feb/2024:16:36:37] "GET /goods/?goods_code__icontains=a00" 200 18835
+172.18.0.1:36580 - - [12/Feb/2024:16:36:41] "OPTIONS /goods/?goods_code__icontains=a000015" 200 -
+172.18.0.1:36578 - - [12/Feb/2024:16:36:42] "GET /goods/?goods_code__icontains=a000015" 200 2627
+172.18.0.1:36586 - - [12/Feb/2024:16:36:46] "POST /asn/detail/" 200 20
+172.18.0.1:36580 - - [12/Feb/2024:16:36:46] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:36578 - - [12/Feb/2024:16:36:58] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:37086 - - [12/Feb/2024:16:40:02] "OPTIONS /asn/list/?asn_code__icontains=m&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:02] "GET /asn/list/?asn_code__icontains=m&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:07] "OPTIONS /asn/list/?asn_code__icontains=ma&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:07] "GET /asn/list/?asn_code__icontains=ma&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:07] "OPTIONS /asn/list/?asn_code__icontains=mah&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:07] "GET /asn/list/?asn_code__icontains=mah&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:08] "OPTIONS /asn/list/?asn_code__icontains=&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:08] "GET /asn/list/?asn_code__icontains=&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:09] "OPTIONS /asn/list/?asn_code__icontains=a&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:09] "GET /asn/list/?asn_code__icontains=a&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:12] "OPTIONS /asn/list/?asn_code__icontains=as&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:12] "GET /asn/list/?asn_code__icontains=as&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:12] "OPTIONS /asn/list/?asn_code__icontains=asn&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:12] "GET /asn/list/?asn_code__icontains=asn&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:15] "OPTIONS /asn/list/?asn_code__icontains=asn2&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:15] "GET /asn/list/?asn_code__icontains=asn2&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:16] "OPTIONS /asn/list/?asn_code__icontains=asn20&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:16] "GET /asn/list/?asn_code__icontains=asn20&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:17] "OPTIONS /asn/list/?asn_code__icontains=asn202&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:17] "GET /asn/list/?asn_code__icontains=asn202&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:17] "OPTIONS /asn/list/?asn_code__icontains=asn2024&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:17] "GET /asn/list/?asn_code__icontains=asn2024&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:18] "GET /asn/list/?asn_code__icontains=asn2024&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:21] "GET /asn/list/?asn_code__icontains=a&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:21] "GET /asn/list/?asn_code__icontains=&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:27] "OPTIONS /asn/list/?asn_code__icontains=S&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:27] "GET /asn/list/?asn_code__icontains=S&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:40:29] "OPTIONS /asn/list/?asn_code__icontains=Supp&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:29] "GET /asn/list/?asn_code__icontains=Supp&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:39] "OPTIONS /asn/list/?asn_code__icontains=Suppli&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:39] "GET /asn/list/?asn_code__icontains=Suppli&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:40] "OPTIONS /asn/list/?asn_code__icontains=Suppliers&page=1" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:40:40] "GET /asn/list/?asn_code__icontains=Suppliers&page=1" 200 840
+172.18.0.1:37098 - - [12/Feb/2024:16:40:42] "GET /asn/list/?asn_code__icontains=&page=1" 200 3182
+172.18.0.1:37098 - - [12/Feb/2024:16:41:30] "OPTIONS /asn/viewprint/11/" 200 -
+172.18.0.1:37098 - - [12/Feb/2024:16:41:30] "GET /asn/viewprint/11/" 200 742
+172.18.0.1:47104 - - [12/Feb/2024:16:48:42] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:47104 - - [12/Feb/2024:16:48:43] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:46784 - - [12/Feb/2024:16:52:30] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:46784 - - [12/Feb/2024:16:52:35] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:46784 - - [12/Feb/2024:16:52:37] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:46784 - - [12/Feb/2024:16:52:43] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:46784 - - [12/Feb/2024:16:52:45] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:46784 - - [12/Feb/2024:16:52:46] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:35996 - - [12/Feb/2024:16:54:21] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:40254 - - [12/Feb/2024:16:57:13] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 1654
+172.18.0.1:59040 - - [12/Feb/2024:16:59:39] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:59040 - - [12/Feb/2024:16:59:43] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:59040 - - [12/Feb/2024:16:59:47] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:33626 - - [12/Feb/2024:17:03:26] "GET /" 200 907
+172.18.0.1:33626 - - [12/Feb/2024:17:03:26] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:33636 - - [12/Feb/2024:17:03:26] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:33652 - - [12/Feb/2024:17:03:26] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:33668 - - [12/Feb/2024:17:03:26] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:33668 - - [12/Feb/2024:17:03:27] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:33668 - - [12/Feb/2024:17:03:27] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:33626 - - [12/Feb/2024:17:03:27] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:33652 - - [12/Feb/2024:17:03:27] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:33636 - - [12/Feb/2024:17:03:27] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:33636 - - [12/Feb/2024:17:03:27] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:33652 - - [12/Feb/2024:17:03:27] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:33626 - - [12/Feb/2024:17:03:27] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:33652 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:33636 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:33626 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:33710 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:33696 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:33680 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:33636 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:33652 - - [12/Feb/2024:17:03:27] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:33732 - - [12/Feb/2024:17:03:27] "GET /warehouse/multiple/?max_page=30" 200 7262
+172.18.0.1:33730 - - [12/Feb/2024:17:03:27] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:33722 - - [12/Feb/2024:17:03:27] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:33652 - - [12/Feb/2024:17:03:29] "GET /js/27.22acbb2f.js" 200 7755
+172.18.0.1:33732 - - [12/Feb/2024:17:03:29] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:39798 - - [12/Feb/2024:17:09:40] "GET /js/26.b9bcc1f5.js" 200 8242
+172.18.0.1:39814 - - [12/Feb/2024:17:09:41] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:39814 - - [12/Feb/2024:17:09:41] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:39814 - - [12/Feb/2024:17:09:42] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:39798 - - [12/Feb/2024:17:09:43] "GET /js/31.68e14c12.js" 200 7777
+172.18.0.1:39814 - - [12/Feb/2024:17:09:43] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 1654
+172.18.0.1:39798 - - [12/Feb/2024:17:09:44] "GET /js/32.2bdad5bd.js" 200 11402
+172.18.0.1:39814 - - [12/Feb/2024:17:09:44] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:39798 - - [12/Feb/2024:17:09:44] "GET /js/30.e0c55128.js" 200 7718
+172.18.0.1:39814 - - [12/Feb/2024:17:09:44] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:39798 - - [12/Feb/2024:17:09:45] "GET /js/29.3a2fa76d.js" 200 7721
+172.18.0.1:39814 - - [12/Feb/2024:17:09:45] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:39798 - - [12/Feb/2024:17:09:46] "GET /js/28.4d7700ec.js" 200 7715
+172.18.0.1:39814 - - [12/Feb/2024:17:09:46] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:39814 - - [12/Feb/2024:17:09:47] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:57460 - - [12/Feb/2024:17:16:11] "GET /asn/detail/?asn_status=1&page=1" 200 2083
+172.18.0.1:57460 - - [12/Feb/2024:17:16:12] "GET /asn/detail/?asn_status=2&page=1" 200 52
+172.18.0.1:57460 - - [12/Feb/2024:17:16:13] "GET /asn/detail/?asn_status=3&page=1" 200 52
+172.18.0.1:57460 - - [12/Feb/2024:17:16:14] "GET /asn/detail/?asn_status=4&page=1" 200 52
+172.18.0.1:57460 - - [12/Feb/2024:17:16:14] "GET /asn/detail/?goods_shortage_qty__gt=0&page=1" 200 1654
+172.18.0.1:57460 - - [12/Feb/2024:17:16:15] "GET /asn/detail/?goods_more_qty__gt=0&page=1" 200 52
+172.18.0.1:57460 - - [12/Feb/2024:17:16:15] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:57460 - - [12/Feb/2024:17:16:16] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:36544 - - [12/Feb/2024:17:37:01] "GET /asn/detail/?asn_status=5&ordering=-id&page=1" 200 1654
+172.18.0.1:43422 - - [12/Feb/2024:19:32:13] "GET /asn/list/?page=1" 200 3182
+172.18.0.1:37398 - - [12/Feb/2024:21:13:57] "GET /asn/viewprint/11/" 200 742
+172.18.0.1:57382 - - [12/Feb/2024:21:14:08] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:57376 - - [12/Feb/2024:21:14:08] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:57380 - - [12/Feb/2024:21:14:08] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:37398 - - [12/Feb/2024:21:14:21] "OPTIONS /asn/detail/?asn_code=ASN2024021211" 200 -
+172.18.0.1:37398 - - [12/Feb/2024:21:14:22] "GET /asn/detail/?asn_code=ASN2024021211" 200 459
+172.18.0.1:37398 - - [12/Feb/2024:21:14:22] "GET /goods/?goods_code__icontains=a000015" 200 2627
