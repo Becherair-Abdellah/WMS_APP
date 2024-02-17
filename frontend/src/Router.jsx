@@ -5,13 +5,26 @@ import MainPages from './layouts/MainPages'
 import Signin from './pages/login/Signin'
 import Signup from './pages/signup/Signup'
 import Inbound from './pages/inbound/Inbound'
+import ASN from './pages/inbound/ASN'
 const Router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>,
+        element:
+            <App/>
+        ,
         children: [
             {index:true, element: <MainPages/>},
-            {path:'/inbound', element: <Inbound/>},
+            {path:'/inbound', element: <Inbound/>,
+            children:[
+                {path:'/inbound/asn',element: <ASN/>},
+                {path:'/inbound/predeliverystock',element: <h1> predeliverystock</h1>},
+                {path:'/inbound/preloadstock',element: <h1> preloadstock</h1>},
+                {path:'/inbound/presortstock',element: <h1>Inside Inbound sortstock</h1>},
+                {path:'/inbound/sortstock',element: <h1>Inside Inbound sortstock</h1>},
+                {path:'/inbound/shortage',element: <h1>Inside Inbound shortage</h1>},
+                {path:'/inbound/more',element: <h1>Inside Inbound more</h1>},
+                {path:'/inbound/asnfinish',element: <h1>Inside Inbound asnfinish</h1>},
+            ]},
             // {path:'/login', element: <Signin/>},
             // {path:'/signup', element: <Signup/>},
         ]

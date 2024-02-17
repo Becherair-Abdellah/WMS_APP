@@ -14,7 +14,7 @@ function App() {
   return (
    <>
    <div className='w-screen ml-[250px] c '>
-    <header className='py-2 px-6 bg-white shadow-sm flex justify-end items-center'>
+    <header className='py-2 px-6 z-[1] bg-white fixed left-0 wf shadow-sm flex justify-end items-center'>
       {/* <FaBars color='gray' size={22} className='cursor-pointer'/> */}
       <div className='flex items-center cursor-pointer hover:bg-gray-50 px-2 rounded-md'>
       <div className='flex items-center '>
@@ -33,7 +33,7 @@ function App() {
       </div> */}
 
     </header>
-    <div className='p-6 bg-gray-100'>
+    <div className='p-6 bg-gray-100 relative'>
     <Outlet/>
     </div>
    </div>

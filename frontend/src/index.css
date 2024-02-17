@@ -8,6 +8,19 @@
 .w {
     scrollbar-width: none;
 }
+.wf{
+  width: calc(100% - 256px) ;
+  left: 256px;
+}
+.bg{
+  background-color: red !important;
+}
+.active{
+  @apply bg-blue-600;
+}
+.click{
+  @apply bg-[#274ddf12] border-r-4 border-r-blue-600
+}
 html{
     @apply font-ubuntu bg-gray-100;
 }

@@ -18,7 +18,7 @@ function Aside() {
     // <aside className='w-[250px] fixed left-0 top-0 h-screen '>
 
     // </aside>
-    <div className="w-64 w fixed top-0 left-0 h-screen overflow-y-auto bg-gradient-to-r from-[#1c3fc5ff] to-[#2a51e7ff] p-3">
+    <div className="w-64 z-[0] w fixed top-0 left-0 h-screen overflow-y-auto bg-gradient-to-r from-[#1c3fc5ff] to-[#2a51e7ff] p-3">
 
       <div className='flex items-center  justify-between'>
         <h1 className='text-white font-bold text-xl py-1'>WMSystem</h1>
