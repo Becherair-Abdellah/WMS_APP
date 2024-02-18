@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { IoMdAdd } from "react-icons/io";
 import { IoIosPrint } from "react-icons/io";
 import { GiConfirmed } from "react-icons/gi";
@@ -7,258 +7,221 @@ import { FaTruckLoading } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { RiDeleteBinFill } from "react-icons/ri";
 import { HiDotsVertical } from "react-icons/hi";
-import { BiRefresh } from 'react-icons/bi';
+import { BiRefresh } from "react-icons/bi";
 import { FaSortAmountUpAlt } from "react-icons/fa";
 import { FaSortAmountDown } from "react-icons/fa";
-import { getAuth } from '../../api/asn';
-import { change_operation_true } from '../../redux/reducers';
-import { create_goods } from '../../api/asn';
+import { getAuth } from "../../api/asn";
+import { change_operation_true } from "../../redux/reducers";
+import { create_goods } from "../../api/asn";
 import { GrArticle } from "react-icons/gr";
 import { FaUserCheck } from "react-icons/fa";
 import { MdOutlineNumbers } from "react-icons/md";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
-import Overlay from '../../../components/Overlay';
 import { FaPlus } from "react-icons/fa";
-function ASNForm() {
-  const [contentSupplier, setContentSupplier] = useState('');
-  const [productCode, setProductCode] = useState('');
-  const [quantity, setQuantity] = useState('');
-
-  const handleSubmit = (event) => {
-      event.preventDefault();
-      // Here you can perform any action with the form data, like submitting it to a backend server
-      console.log("Content Supplier:", contentSupplier);
-      console.log("Product Code:", productCode);
-      console.log("Quantity:", quantity);
-      // Reset the form fields after submission
-      setContentSupplier('');
-      setProductCode('');
-      setQuantity('');
-  }
-
-  return (
-     <div className='bg-white rounded-md mt-5 p-6 w-fit fixed left-[45%] top-[50%] z-[1] -translate-x-[25%] -translate-y-[50%] shadow-lg border-blue-700 border-2'>
-     
-      <div>
-      <div className='flex items-center gap-3 mb-2 '>
-        <h1 className='text-blue-700 font-bold text-3xl text-center'>Add New ASN</h1>
-        <GrArticle size={43} className='text-blue-700'/>
-      </div>
-      <p className='text-gray-500 text-xl'>Now you can to add more ASNs choose a Supplier and code of ASN and QTY</p>
-      </div>
-       <form onSubmit={handleSubmit} className=" mt-8 w-full">
-          <div className="mb-4 relative w-full">
-          <FaUserCheck size={25} className='absolute bottom-2 left-2 text-gray-400' />
-              <label htmlFor="contentSupplier" className=" flex gap-2 items-center text-gray-700 text-lg mb-3">Name Supplier</label>
-              <input 
-                  type="text" 
-                  id="contentSupplier" 
-                  value={contentSupplier} 
-                  onChange={(event) => setContentSupplier(event.target.value)} 
-                  className="mt-1 block w-full rounded-md bg-gray-100 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 h-[40px] pl-10" 
-                  required 
-                  placeholder='write supplier ...'
-              />
-          </div>
-          <div className='flex items-center gap-3'>
-          <div className="mb-4 relative w-full">
-          <MdOutlineNumbers size={25} className='absolute bottom-2 left-2 text-gray-400' />
-
-              <label htmlFor="productCode" className="block text-gray-700">Product Code:</label>
-              <input 
-                  type="text" 
-                  id="productCode" 
-                  value={productCode} 
-                  onChange={(event) => setProductCode(event.target.value)} 
-                  className="mt-1 block w-full rounded-md bg-gray-100 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 h-[40px] pl-10" 
-                  required 
-                  placeholder='write product code ...'
-              />
-          </div>
-          <div className="mb-4 relative w-full">
-          <MdOutlineProductionQuantityLimits size={25} className='absolute bottom-2 left-2 text-gray-400' />
-
-              <label htmlFor="quantity" className="block text-gray-700">Quantity:</label>
-              <input 
-                  type="number" 
-                  id="quantity" 
-                  value={quantity} 
-                  onChange={(event) => setQuantity(event.target.value)} 
-                  className="mt-1 block w-full rounded-md bg-gray-100 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 h-[40px] pl-10" 
-                  required 
-                  placeholder='how much ... ?'
-              />
-          </div>
-          <div className=" w-fit">
-              <button 
-                  id="quantity" 
-                  className=" bg-blue-600 mt-2 rounded-md text-white h-[40px] p-2 w-fit" 
-                  required 
-                  placeholder='how much ... ?'
-              >
-                add
-              </button>
-          </div>
-          </div>
-          <div className='w-full text-end'>
-          <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 mr-3">Send</button>
-          <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Cancel</button>
-          </div>
-      </form>
-     </div>
-  );
-}
-
-
+import { searched_codes } from "../../api/asn";
+import NewAsn from './NewAsn'
 function ASN() {
-  const tool = useSelector(({set_tools:{operation}})=>operation );
+  const tool = useSelector(({ set_tools: { operation } }) => operation);
   console.log(tool);
   const dispatch = useDispatch();
   const ref = useRef();
-  const [data,setData] = useState([]);
-  const [g_data,getData] = useState({});
-  const [load,setLoad] = useState(false)
-  useEffect(()=>{
-    const getData = async()=>{
+  const [data, setData] = useState([]);
+  const [g_data, getData] = useState({});
+  const [load, setLoad] = useState(false);
+  const [newForm,Set_new_form] = useState(true);
+  useEffect(() => {
+    const getData = async () => {
       let response = await getAuth();
       // console.log(data);
       setData(response);
       setLoad(true);
-  
-    }
+    };
     getData();
-
-  },[])
+  }, []);
   console.log(load);
-  // click functions item 
-  const click_item = (item)=>{
+  // click functions item
+  const click_item = (item) => {
     // setTest(id);
     getData(item);
-  }
+  };
   return (
- <>
-    <div className="w-full bg-white p-2 rounded-lg  flex justify-between items-center mt-3">
-    <Overlay/>
-
-<form>   
-      <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
-      <div className="relative">
-          <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+    <>
+      <div className="w-full bg-white p-2 rounded-lg  flex justify-between items-center mt-3">
+        <form>
+          <label
+            htmlFor="default-search"
+            className="mb-2 text-sm font-medium text-gray-900 sr-only "
+          >
+            Search
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg
+                className="w-4 h-4 text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
               </svg>
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              className="block p-4 ps-10 text-sm text-gray-900 rounded-lg w-[450px] bg-gray-100 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search products, Codes..."
+              required
+            />
           </div>
-          <input type="search" id="default-search" className="block p-4 ps-10 text-sm text-gray-900 rounded-lg w-[450px] bg-gray-100 focus:ring-blue-500 focus:border-blue-500" placeholder="Search products, Codes..." required />
+        </form>
+
+        <div className="flex gap-2">
+          <button
+            ref={ref}
+            className="text-white bg-blue-700 hover:bg-blue-600 rounded-lg text-sm px-2 font-bold"
+            onClick={() => {
+              ref.current.children[0].classList.add("animate-spin", "spin");
+              setLoad(false);
+              const getData = async () => {
+                try {
+                  let response = await getAuth();
+                  // console.log(data);
+                  console.log(response);
+                  setData(response);
+                  ref.current.children[0].classList.remove(
+                    "animate-spin",
+                    "spin"
+                  );
+                  setLoad(true);
+                } catch (e) {
+                  console.log(e);
+                }
+              };
+              getData();
+            }}
+          >
+            <BiRefresh size={25} />
+          </button>
+          <button
+            onClick={() => {
+              create_goods();
+              Set_new_form(false);
+            }}
+            className="text-white bg-blue-700 hover:bg-blue-600  font-medium rounded-lg text-sm px-4 py-2  "
+          >
+            Add New
+          </button>
+        </div>
       </div>
-</form>
 
-<div className="flex gap-2">
-<button ref={ref} className="text-white bg-blue-700 hover:bg-blue-600 rounded-lg text-sm px-2 font-bold" onClick={()=>{
-  ref.current.children[0].classList.add('animate-spin','spin');
-  setLoad(false);
-  const getData = async()=>{
-  try{
-    let response = await getAuth();
-    // console.log(data);
-    console.log(response);
-    setData(response);
-  ref.current.children[0].classList.remove('animate-spin','spin');
-  setLoad(true);
-  }catch(e){
-    console.log(e)
-  }
+      {tool && (
+        <div className="w-full p-3 mt-3  bg-white shadow-lg rounded-md">
+          <div className="w-full ">
+            <ul className="flex  gap-5 w-full">
+              <li
+                className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1"
+                onClick={() => {
+                  console.log(g_data.total_weight);
+                }}
+              >
+                <IoIosPrint size={23} />
+                <h1>Print</h1>
+              </li>
 
-  }
-  getData();
-}  }><BiRefresh size={25} /></button>
-<button onClick={()=>{
-  create_goods()
-}} className="text-white bg-blue-700 hover:bg-blue-600  font-medium rounded-lg text-sm px-4 py-2  ">Add New</button>
-</div>
-</div>
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+                <GiConfirmed size={23} />
+                <h1>Confirme Deleviry</h1>
+              </li>
 
-{  tool && <div className="w-full p-3 mt-3  bg-white shadow-lg rounded-md">
-  <div className="w-full ">
-    <ul className="flex  gap-5 w-full">
-    <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1"
-    onClick={()=>{
-      console.log(g_data.total_weight);
-    }}>
-        < IoIosPrint size={23} />
-        <h1>Print</h1>
-      </li>
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+                <FaTruckLoading size={23} />
+                <h1>finish loadaing</h1>
+              </li>
 
-      <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
-        <GiConfirmed size={23} />
-        <h1>Confirme Deleviry</h1>
-      </li>
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+                <FaSortAmountDown size={23} />
+                <h1>Confirme Sorted</h1>
+              </li>
 
-      <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
-        <FaTruckLoading size={23} />
-        <h1>finish loadaing</h1>
-      </li>
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-green-600 -0 duration-200 w-full hover:bg-green-500 rounded-md text-white px-2 p-1 ">
+                <FaEdit size={23} />
+                <h1>Edit</h1>
+              </li>
 
-      <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
-        <FaSortAmountDown size={23} />
-        <h1>Confirme Sorted</h1>
-      </li>
-
-      <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-green-600 -0 duration-200 w-full hover:bg-green-500 rounded-md text-white px-2 p-1 ">
-        <FaEdit size={23} />
-        <h1>Edit</h1>
-      </li>
-
-      <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-red-600 duration-200 w-full hover:bg-red-500 rounded-md text-white px-2 p-1 ">
-        <RiDeleteBinFill size={23} />
-        <h1>Delete</h1>
-      </li>
-    </ul>
-  </div>
-</div>} 
- {/* table contnet  */}
- <div className="overflow-x-auto bg-white mt-3 p-3 rounded-md">
-     {!load? <BiRefresh size={40} className='text-blue-700 font-bold animate-spin ml-[45%]' />: <table className="table-auto w-full">
-        <thead>
-          <tr className='border-b-2'>
-            <th className="px-1 py-5  text-start  text-white"><span className='bg-blue-600 p-2 text-white'>ASN Code</span></th>
-            <th className="px-1 py-5 text-start">ASN Status</th>
-            <th className="px-1 py-5 text-start">Total Weight(kg)</th>
-            <th className="px-1 py-5 text-start">Total Volume</th>
-            <th className="px-1 py-5 text-start">Supplier Name</th>
-            <th className="px-1 py-5 text-start">Creater</th>
-            <th className="px-1 py-5 text-start">Create Time</th>
-            <th className="px-1 py-5 text-start">Update Time</th>
-          </tr>
-        </thead>
-        <tbody className=''>
-          {data.map((item) => (
-            <tr key={item.id} className='border-b-2 text-gray-600 border-gray-200 cursor-pointer hover:bg-gray-50' onClick={(e)=>{
-              for(const item of e.target.parentNode.parentNode.children){
-                item.classList.remove('click');
-
-              }
-              getData(item);
-              e.target.parentNode.classList.add('click');
-              dispatch(change_operation_true());
-            }}>
-              
-                <td  className="px-1 py-5 text-start">{item.asn_code}</td>
-                <td  className="px-1 py-5 text-start">{item.asn_status}</td>
-                <td  className="px-1 py-5 text-start">{Math.floor(item.total_weight)}</td>
-                <td  className="px-1 py-5 text-start">{Math.floor(item.total_volume)}</td>
-                <td  className="px-1 py-5 text-start">{item.supplier}</td>
-                <td  className="px-1 py-5 text-start">{item.creater}</td>
-                <td  className="px-1 py-5 text-start">{item.create_time}</td>
-                <td  className="px-1 py-5 text-start">{item.update_time}</td>
-              
-            </tr>
-          ))}
-        </tbody>
-      </table>}
-    </div>
-    <ASNForm/>
- </>
-  )
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-red-600 duration-200 w-full hover:bg-red-500 rounded-md text-white px-2 p-1 ">
+                <RiDeleteBinFill size={23} />
+                <h1>Delete</h1>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
+      {/* table contnet  */}
+      { newForm ? <div className="overflow-x-auto bg-white mt-3 p-3 rounded-md">
+        {!load ? (
+          <BiRefresh
+            size={40}
+            className="text-blue-700 font-bold animate-spin ml-[45%]"
+          />
+        ) : (
+          <table className="table-auto w-full">
+            <thead>
+              <tr className="border-b-2">
+                <th className="px-1 py-5  text-start  text-white">
+                  <span className="bg-blue-600 p-2 text-white">ASN Code</span>
+                </th>
+                <th className="px-1 py-5 text-start">ASN Status</th>
+                <th className="px-1 py-5 text-start">Total Weight(kg)</th>
+                <th className="px-1 py-5 text-start">Total Volume</th>
+                <th className="px-1 py-5 text-start">Supplier Name</th>
+                <th className="px-1 py-5 text-start">Creater</th>
+                <th className="px-1 py-5 text-start">Create Time</th>
+                <th className="px-1 py-5 text-start">Update Time</th>
+              </tr>
+            </thead>
+            <tbody className="">
+              {data.map((item) => (
+                <tr
+                  key={item.id}
+                  className="border-b-2 text-gray-600 border-gray-200 cursor-pointer hover:bg-gray-50"
+                  onClick={(e) => {
+                    for (const item of e.target.parentNode.parentNode
+                      .children) {
+                      item.classList.remove("click");
+                    }
+                    getData(item);
+                    e.target.parentNode.classList.add("click");
+                    dispatch(change_operation_true());
+                  }}
+                >
+                  <td className="px-1 py-5 text-start">{item.asn_code}</td>
+                  <td className="px-1 py-5 text-start">{item.asn_status}</td>
+                  <td className="px-1 py-5 text-start">
+                    {Math.floor(item.total_weight)}
+                  </td>
+                  <td className="px-1 py-5 text-start">
+                    {Math.floor(item.total_volume)}
+                  </td>
+                  <td className="px-1 py-5 text-start">{item.supplier}</td>
+                  <td className="px-1 py-5 text-start">{item.creater}</td>
+                  <td className="px-1 py-5 text-start">{item.create_time}</td>
+                  <td className="px-1 py-5 text-start">{item.update_time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>:
+      <NewAsn fn={Set_new_form} state={newForm}/>}
+    </>
+  );
 }
 
-export default ASN
+export default ASN;

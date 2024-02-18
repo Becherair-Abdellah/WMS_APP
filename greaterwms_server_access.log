@@ -4923,3 +4923,924 @@ Traceback (most recent call last):
     staff_name = staff.objects.filter(openid=self.request.auth.openid, id=self.request.META.get('HTTP_OPERATOR')).first().staff_name
 AttributeError: 'NoneType' object has no attribute 'staff_name'
 172.18.0.1:56270 - - [16/Feb/2024:03:34:40] "POST /asn/detail/" 500 116543
+Welcome To GreaterWMS
+2024-02-17 15:45:28,658 INFO     Starting server at tcp:port=8008:interface=0.0.0.0
+2024-02-17 15:45:28,658 INFO     HTTP/2 support enabled
+2024-02-17 15:45:28,659 INFO     Configuring endpoint tcp:port=8008:interface=0.0.0.0
+2024-02-17 15:45:28,660 INFO     Listening on TCP address 0.0.0.0:8008
+172.18.0.1:50306 - - [17/Feb/2024:15:46:30] "GET /" 200 907
+172.18.0.1:50306 - - [17/Feb/2024:15:46:32] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:51256 - - [17/Feb/2024:15:46:32] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:51268 - - [17/Feb/2024:15:46:33] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:51274 - - [17/Feb/2024:15:46:33] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:51274 - - [17/Feb/2024:15:46:54] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:50306 - - [17/Feb/2024:15:46:54] "GET /js/62.846260f9.js" 200 361455
+172.18.0.1:51274 - - [17/Feb/2024:15:46:54] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:51256 - - [17/Feb/2024:15:46:54] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:51274 - - [17/Feb/2024:15:46:54] "GET /fonts/KFOmCnqEu92Fr1Mu4mxM.f1e2a767.woff" 200 20344
+172.18.0.1:51256 - - [17/Feb/2024:15:46:54] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:50306 - - [17/Feb/2024:15:46:54] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:51274 - - [17/Feb/2024:15:46:54] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:51274 - - [17/Feb/2024:15:46:58] "GET /fonts/KFOlCnqEu92Fr1MmWUlfBBc-.77ecb942.woff" 200 20408
+172.18.0.1:51256 - - [17/Feb/2024:15:46:58] "GET /fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.c08197a9.woff2" 200 128264
+172.18.0.1:53788 - - [17/Feb/2024:15:47:00] "OPTIONS /staff/?staff_name=bachir" 200 -
+172.18.0.1:53790 - - [17/Feb/2024:15:47:00] "OPTIONS /warehouse/multiple/?max_page=30" 200 -
+172.18.0.1:51274 - - [17/Feb/2024:15:47:00] "GET /fonts/KFOlCnqEu92Fr1MmEU9fBBc-.48af7707.woff" 200 20544
+172.18.0.1:53790 - - [17/Feb/2024:15:47:01] "GET /warehouse/multiple/?max_page=30" 200 6933
+172.18.0.1:53788 - - [17/Feb/2024:15:47:02] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:47704 - - [17/Feb/2024:15:47:39] "OPTIONS /asn/list/" 200 -
+172.18.0.1:47704 - - [17/Feb/2024:15:47:40] "GET /asn/list/" 200 3997
+172.18.0.1:47704 - - [17/Feb/2024:15:47:46] "POST /asn/list/" 200 338
+172.18.0.1:47704 - - [17/Feb/2024:15:47:46] "OPTIONS /asn/detail/" 200 -
+[2024-02-17 15:47:47][django.request.log_response():241] [ERROR] Internal Server Error: /asn/detail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 472, in thread_handler
+    raise exc_info[1]
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/GreaterWMS/./asn/views.py", line 190, in create
+    staff_name = staff.objects.filter(openid=self.request.auth.openid, id=self.request.META.get('HTTP_OPERATOR')).first().staff_name
+AttributeError: 'NoneType' object has no attribute 'staff_name'
+172.18.0.1:47704 - - [17/Feb/2024:15:47:47] "POST /asn/detail/" 500 116535
+172.18.0.1:35160 - - [17/Feb/2024:15:48:13] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:35172 - - [17/Feb/2024:15:48:13] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:35172 - - [17/Feb/2024:15:48:13] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:35160 - - [17/Feb/2024:15:48:13] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:35180 - - [17/Feb/2024:15:48:13] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:35196 - - [17/Feb/2024:15:48:14] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:35208 - - [17/Feb/2024:15:48:14] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:35200 - - [17/Feb/2024:15:48:14] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:35214 - - [17/Feb/2024:15:48:14] "OPTIONS /asn/list/?page=1" 200 -
+172.18.0.1:35172 - - [17/Feb/2024:15:48:14] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:35160 - - [17/Feb/2024:15:48:14] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:35214 - - [17/Feb/2024:15:48:14] "GET /asn/list/?page=1" 200 3997
+172.18.0.1:35214 - - [17/Feb/2024:15:48:23] "OPTIONS /asn/list/" 200 -
+172.18.0.1:35214 - - [17/Feb/2024:15:48:24] "POST /asn/list/" 200 338
+172.18.0.1:35214 - - [17/Feb/2024:15:48:30] "OPTIONS /goods/?goods_code__icontains=a" 200 -
+172.18.0.1:35214 - - [17/Feb/2024:15:48:31] "GET /goods/?goods_code__icontains=a" 200 18824
+172.18.0.1:35214 - - [17/Feb/2024:15:48:31] "OPTIONS /goods/?goods_code__icontains=a0" 200 -
+172.18.0.1:35214 - - [17/Feb/2024:15:48:32] "GET /goods/?goods_code__icontains=a0" 200 18825
+172.18.0.1:35214 - - [17/Feb/2024:15:48:33] "OPTIONS /goods/?goods_code__icontains=a0090" 200 -
+172.18.0.1:35214 - - [17/Feb/2024:15:48:34] "GET /goods/?goods_code__icontains=a0090" 200 2611
+172.18.0.1:35214 - - [17/Feb/2024:15:48:38] "OPTIONS /asn/detail/" 200 -
+172.18.0.1:35214 - - [17/Feb/2024:15:48:39] "POST /asn/detail/" 200 20
+172.18.0.1:35214 - - [17/Feb/2024:15:48:40] "GET /asn/list/?page=1" 200 4381
+172.18.0.1:57976 - - [17/Feb/2024:15:52:51] "POST /asn/list/" 200 338
+172.18.0.1:33914 - - [17/Feb/2024:15:52:58] "OPTIONS /goods/?goods_code__icontains=a09" 200 -
+172.18.0.1:57976 - - [17/Feb/2024:15:52:58] "GET /goods/?goods_code__icontains=a" 200 18824
+172.18.0.1:33912 - - [17/Feb/2024:15:52:59] "GET /goods/?goods_code__icontains=a0" 200 18825
+172.18.0.1:33914 - - [17/Feb/2024:15:52:59] "GET /goods/?goods_code__icontains=a09" 200 2087
+172.18.0.1:33914 - - [17/Feb/2024:15:53:01] "OPTIONS /goods/?goods_code__icontains=a000041" 200 -
+172.18.0.1:33912 - - [17/Feb/2024:15:53:02] "GET /goods/?goods_code__icontains=a000041" 200 2645
+172.18.0.1:33912 - - [17/Feb/2024:15:53:08] "POST /asn/detail/" 200 20
+172.18.0.1:33914 - - [17/Feb/2024:15:53:09] "GET /asn/list/?page=1" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:56:07] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:56:28] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:56:48] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:56:57] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:56:59] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:01] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:11] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:16] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:18] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:30] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:32] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:35] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:37] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:39] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:41] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:57:42] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:05] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:13] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:16] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:25] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:26] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:29] "GET /asn/list/" 200 4772
+172.18.0.1:43272 - - [17/Feb/2024:15:58:48] "POST /asn/list/" 200 338
+[2024-02-17 15:58:49][django.request.log_response():241] [ERROR] Internal Server Error: /asn/detail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 472, in thread_handler
+    raise exc_info[1]
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/GreaterWMS/./asn/views.py", line 190, in create
+    staff_name = staff.objects.filter(openid=self.request.auth.openid, id=self.request.META.get('HTTP_OPERATOR')).first().staff_name
+AttributeError: 'NoneType' object has no attribute 'staff_name'
+172.18.0.1:43272 - - [17/Feb/2024:15:58:49] "POST /asn/detail/" 500 116570
+172.18.0.1:43272 - - [17/Feb/2024:15:59:04] "GET /asn/list/" 200 4772
+172.18.0.1:52492 - - [17/Feb/2024:15:59:08] "OPTIONS /asn/list/" 200 -
+172.18.0.1:52492 - - [17/Feb/2024:15:59:09] "GET /asn/list/" 200 4772
+172.18.0.1:52492 - - [17/Feb/2024:15:59:12] "GET /asn/list/" 200 4772
+172.18.0.1:52492 - - [17/Feb/2024:15:59:16] "POST /asn/list/" 200 338
+[2024-02-17 15:59:16][django.request.log_response():241] [ERROR] Internal Server Error: /asn/detail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 472, in thread_handler
+    raise exc_info[1]
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/GreaterWMS/./asn/views.py", line 190, in create
+    staff_name = staff.objects.filter(openid=self.request.auth.openid, id=self.request.META.get('HTTP_OPERATOR')).first().staff_name
+AttributeError: 'NoneType' object has no attribute 'staff_name'
+172.18.0.1:52492 - - [17/Feb/2024:15:59:16] "POST /asn/detail/" 500 116602
+172.18.0.1:55152 - - [17/Feb/2024:16:01:37] "GET /asn/list/" 200 4772
+172.18.0.1:55152 - - [17/Feb/2024:16:02:31] "POST /asn/list/" 200 338
+[2024-02-17 16:02:31][django.request.log_response():241] [ERROR] Internal Server Error: /asn/detail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 472, in thread_handler
+    raise exc_info[1]
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/GreaterWMS/./asn/views.py", line 190, in create
+    staff_name = staff.objects.filter(openid=self.request.auth.openid, id=self.request.META.get('HTTP_OPERATOR')).first().staff_name
+AttributeError: 'NoneType' object has no attribute 'staff_name'
+172.18.0.1:55152 - - [17/Feb/2024:16:02:32] "POST /asn/detail/" 500 116602
+172.18.0.1:37064 - - [17/Feb/2024:16:15:35] "GET /asn/list/" 200 4772
+172.18.0.1:37064 - - [17/Feb/2024:16:15:59] "GET /asn/list/" 200 4772
+172.18.0.1:37064 - - [17/Feb/2024:16:16:06] "GET /asn/list/" 200 4772
+172.18.0.1:37064 - - [17/Feb/2024:16:16:23] "GET /asn/list/" 200 4772
+172.18.0.1:37064 - - [17/Feb/2024:16:16:38] "GET /asn/list/" 200 4772
+172.18.0.1:51018 - - [17/Feb/2024:16:16:38] "GET /asn/list/" 200 4772
+172.18.0.1:37064 - - [17/Feb/2024:16:16:43] "POST /asn/list/" 200 338
+172.18.0.1:37064 - - [17/Feb/2024:16:16:43] "POST /asn/detail/" 200 20
+172.18.0.1:40924 - - [17/Feb/2024:16:19:37] "GET /" 200 907
+172.18.0.1:40924 - - [17/Feb/2024:16:19:37] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:48092 - - [17/Feb/2024:16:19:37] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:48086 - - [17/Feb/2024:16:19:37] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:48088 - - [17/Feb/2024:16:19:37] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:48088 - - [17/Feb/2024:16:19:38] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:48088 - - [17/Feb/2024:16:19:38] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:48092 - - [17/Feb/2024:16:19:38] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:40924 - - [17/Feb/2024:16:19:38] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:48086 - - [17/Feb/2024:16:19:38] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:48086 - - [17/Feb/2024:16:19:38] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:48092 - - [17/Feb/2024:16:19:38] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:48088 - - [17/Feb/2024:16:19:38] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:48088 - - [17/Feb/2024:16:19:38] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:48086 - - [17/Feb/2024:16:19:38] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:40924 - - [17/Feb/2024:16:19:38] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:48096 - - [17/Feb/2024:16:19:38] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:48092 - - [17/Feb/2024:16:19:38] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:48088 - - [17/Feb/2024:16:19:39] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:48108 - - [17/Feb/2024:16:19:39] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:48086 - - [17/Feb/2024:16:19:39] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:48132 - - [17/Feb/2024:16:19:39] "GET /warehouse/multiple/?max_page=30" 200 6933
+172.18.0.1:48120 - - [17/Feb/2024:16:19:39] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:48128 - - [17/Feb/2024:16:19:39] "GET /asn/list/?page=1" 200 5077
+172.18.0.1:48132 - - [17/Feb/2024:16:19:44] "OPTIONS /asn/preload/65/" 200 -
+172.18.0.1:48132 - - [17/Feb/2024:16:19:44] "POST /asn/preload/65/" 200 362
+172.18.0.1:48132 - - [17/Feb/2024:16:19:45] "GET /asn/list/?page=1" 200 5077
+172.18.0.1:48088 - - [17/Feb/2024:16:20:20] "GET /" 200 907
+172.18.0.1:48088 - - [17/Feb/2024:16:20:20] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:48108 - - [17/Feb/2024:16:20:20] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:48086 - - [17/Feb/2024:16:20:20] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:48092 - - [17/Feb/2024:16:20:20] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:48088 - - [17/Feb/2024:16:20:21] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:48086 - - [17/Feb/2024:16:20:21] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:48088 - - [17/Feb/2024:16:20:21] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:48108 - - [17/Feb/2024:16:20:21] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:48092 - - [17/Feb/2024:16:20:21] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:48086 - - [17/Feb/2024:16:20:21] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:48088 - - [17/Feb/2024:16:20:21] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:48108 - - [17/Feb/2024:16:20:21] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:48086 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:48088 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:48092 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:48108 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:48096 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:48086 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:40924 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:48088 - - [17/Feb/2024:16:20:21] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:48120 - - [17/Feb/2024:16:20:21] "GET /warehouse/multiple/?max_page=30" 200 6933
+172.18.0.1:48132 - - [17/Feb/2024:16:20:22] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:48128 - - [17/Feb/2024:16:20:22] "GET /asn/list/?page=1" 200 5077
+172.18.0.1:48120 - - [17/Feb/2024:16:20:25] "POST /asn/list/" 200 338
+172.18.0.1:48086 - - [17/Feb/2024:16:21:04] "GET /" 200 907
+172.18.0.1:48108 - - [17/Feb/2024:16:21:04] "GET /js/app.d0fc56b0.js" 200 269795
+172.18.0.1:48086 - - [17/Feb/2024:16:21:04] "GET /css/app.45730797.css" 200 1376
+172.18.0.1:48092 - - [17/Feb/2024:16:21:05] "GET /js/vendor.4a49a306.js" 200 2250174
+172.18.0.1:48088 - - [17/Feb/2024:16:21:05] "GET /css/vendor.2ac1ba6a.css" 200 208810
+172.18.0.1:48086 - - [17/Feb/2024:16:21:05] "GET /statics/baseurl.txt" 200 23
+172.18.0.1:48088 - - [17/Feb/2024:16:21:05] "GET /css/2.74c09acd.css" 200 107
+172.18.0.1:48108 - - [17/Feb/2024:16:21:05] "GET /js/25.e55d83e5.js" 200 42341
+172.18.0.1:48086 - - [17/Feb/2024:16:21:05] "GET /js/73.71317112.js" 200 2565
+172.18.0.1:48092 - - [17/Feb/2024:16:21:05] "GET /js/2.3f459fa1.js" 200 27711
+172.18.0.1:48088 - - [17/Feb/2024:16:21:05] "GET /statics/icons/IOS.png" 200 3161
+172.18.0.1:48092 - - [17/Feb/2024:16:21:05] "GET /statics/icons/GitHub.png" 200 8624
+172.18.0.1:48086 - - [17/Feb/2024:16:21:05] "GET /statics/icons/android.png" 200 7470
+172.18.0.1:48088 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:48092 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:48086 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:48108 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:48096 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:40924 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:48092 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:48088 - - [17/Feb/2024:16:21:06] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:48128 - - [17/Feb/2024:16:21:06] "GET /warehouse/multiple/?max_page=30" 200 6933
+172.18.0.1:48120 - - [17/Feb/2024:16:21:06] "GET /asn/list/?page=1" 200 5077
+172.18.0.1:48132 - - [17/Feb/2024:16:21:06] "GET /staff/?staff_name=bachir" 200 238
+172.18.0.1:48128 - - [17/Feb/2024:16:21:09] "POST /asn/list/" 200 338
+172.18.0.1:41066 - - [17/Feb/2024:16:21:33] "GET /asn/list/" 200 5077
+172.18.0.1:41066 - - [17/Feb/2024:16:21:45] "POST /asn/list/" 200 339
+172.18.0.1:41066 - - [17/Feb/2024:16:21:45] "POST /asn/detail/" 200 20
+172.18.0.1:38648 - - [17/Feb/2024:16:23:10] "POST /asn/list/" 200 339
+172.18.0.1:38648 - - [17/Feb/2024:16:23:10] "POST /asn/detail/" 200 20
+172.18.0.1:38648 - - [17/Feb/2024:16:23:15] "GET /asn/list/" 200 5689
+172.18.0.1:38648 - - [17/Feb/2024:16:23:20] "POST /asn/list/" 200 339
+172.18.0.1:38648 - - [17/Feb/2024:16:23:20] "POST /asn/detail/" 200 20
+172.18.0.1:51226 - - [17/Feb/2024:16:24:56] "GET /js/63.3e8b50db.js" 200 1436
+172.18.0.1:51242 - - [17/Feb/2024:16:24:56] "GET /js/3.9d17e704.js" 200 17066
+172.18.0.1:51242 - - [17/Feb/2024:16:24:56] "GET /statics/baseinfo/company.png" 200 4857
+172.18.0.1:51226 - - [17/Feb/2024:16:24:56] "GET /statics/baseinfo/supplier.png" 200 8282
+172.18.0.1:51242 - - [17/Feb/2024:16:24:56] "GET /statics/baseinfo/customer.png" 200 9437
+172.18.0.1:51252 - - [17/Feb/2024:16:24:56] "OPTIONS /company/?page=1" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:24:56] "GET /company/?page=1" 200 321
+172.18.0.1:51242 - - [17/Feb/2024:16:24:57] "GET /js/5.3a494520.js" 200 19773
+172.18.0.1:51252 - - [17/Feb/2024:16:24:57] "OPTIONS /supplier/?page=1" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:24:57] "GET /supplier/?page=1" 200 8341
+172.18.0.1:51252 - - [17/Feb/2024:16:25:17] "OPTIONS /supplier/" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:25:17] "POST /supplier/" 200 303
+172.18.0.1:51252 - - [17/Feb/2024:16:25:17] "GET /supplier/?page=1" 200 8314
+172.18.0.1:51252 - - [17/Feb/2024:16:25:22] "GET /asn/list/?page=1" 200 6001
+172.18.0.1:51252 - - [17/Feb/2024:16:25:26] "POST /asn/list/" 200 339
+172.18.0.1:51252 - - [17/Feb/2024:16:26:05] "GET /goods/?goods_code__icontains=a" 200 18830
+172.18.0.1:51252 - - [17/Feb/2024:16:26:12] "GET /goods/?goods_code__icontains=a0" 200 18831
+172.18.0.1:51252 - - [17/Feb/2024:16:26:12] "OPTIONS /goods/?goods_code__icontains=a00" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:26:13] "GET /goods/?goods_code__icontains=a00" 200 18832
+172.18.0.1:51252 - - [17/Feb/2024:16:26:16] "OPTIONS /goods/?goods_code__icontains=a000" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:26:17] "GET /goods/?goods_code__icontains=a000" 200 18862
+172.18.0.1:51252 - - [17/Feb/2024:16:26:19] "OPTIONS /goods/?goods_code__icontains=a0000" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:26:19] "GET /goods/?goods_code__icontains=a0000" 200 18863
+172.18.0.1:51252 - - [17/Feb/2024:16:26:21] "OPTIONS /goods/?goods_code__icontains=a00000" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:26:21] "GET /goods/?goods_code__icontains=a00000" 200 2093
+172.18.0.1:51252 - - [17/Feb/2024:16:26:23] "GET /goods/?goods_code__icontains=a0000" 200 18863
+172.18.0.1:51252 - - [17/Feb/2024:16:26:29] "OPTIONS /goods/?goods_code__icontains=a00004" 200 -
+172.18.0.1:51252 - - [17/Feb/2024:16:26:29] "GET /goods/?goods_code__icontains=a00004" 200 3771
+172.18.0.1:51252 - - [17/Feb/2024:16:26:31] "GET /goods/?goods_code__icontains=a000041" 200 2651
+172.18.0.1:51252 - - [17/Feb/2024:16:26:41] "POST /asn/detail/" 200 20
+172.18.0.1:51252 - - [17/Feb/2024:16:26:42] "GET /asn/list/?page=1" 200 6391
+172.18.0.1:45160 - - [17/Feb/2024:16:28:11] "POST /asn/list/" 200 339
+172.18.0.1:45160 - - [17/Feb/2024:16:28:39] "POST /asn/list/" 200 339
+172.18.0.1:45160 - - [17/Feb/2024:16:29:31] "OPTIONS /goods/?goods_code__icontains=b" 200 -
+172.18.0.1:45160 - - [17/Feb/2024:16:29:32] "GET /goods/?goods_code__icontains=b" 200 2093
+172.18.0.1:45160 - - [17/Feb/2024:16:29:37] "OPTIONS /goods/?goods_code__icontains=" 200 -
+172.18.0.1:45160 - - [17/Feb/2024:16:29:38] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:31:37] "GET /goods/?goods_code__icontains=a" 200 18830
+172.18.0.1:38564 - - [17/Feb/2024:16:31:40] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:46248 - - [17/Feb/2024:16:32:24] "GET /statics/baseinfo/company.png" 200 4857
+172.18.0.1:46256 - - [17/Feb/2024:16:32:24] "GET /statics/baseinfo/supplier.png" 200 8282
+172.18.0.1:46264 - - [17/Feb/2024:16:32:25] "GET /statics/baseinfo/customer.png" 200 9437
+172.18.0.1:38564 - - [17/Feb/2024:16:32:25] "GET /company/?page=1" 200 321
+172.18.0.1:46264 - - [17/Feb/2024:16:32:25] "GET /js/72.aceac69b.js" 200 2537
+172.18.0.1:46256 - - [17/Feb/2024:16:32:25] "GET /js/20.e49bcfd3.js" 200 33399
+172.18.0.1:46256 - - [17/Feb/2024:16:32:25] "GET /statics/goods/goodslist.png" 200 4590
+172.18.0.1:46264 - - [17/Feb/2024:16:32:25] "GET /statics/goods/goodsunit.png" 200 2214
+172.18.0.1:46256 - - [17/Feb/2024:16:32:25] "GET /statics/goods/goodscolor.png" 200 6965
+172.18.0.1:46248 - - [17/Feb/2024:16:32:25] "GET /statics/goods/goodsclass.png" 200 6853
+172.18.0.1:46256 - - [17/Feb/2024:16:32:25] "GET /statics/goods/goodsbrand.png" 200 6852
+172.18.0.1:46264 - - [17/Feb/2024:16:32:26] "GET /statics/goods/goodsshape.png" 200 7457
+172.18.0.1:38564 - - [17/Feb/2024:16:32:26] "OPTIONS /goods/?page=1" 200 -
+172.18.0.1:46256 - - [17/Feb/2024:16:32:26] "GET /statics/goods/goodsspecs.png" 200 6997
+172.18.0.1:46248 - - [17/Feb/2024:16:32:26] "GET /statics/goods/goodsorigin.png" 200 7350
+172.18.0.1:38564 - - [17/Feb/2024:16:32:26] "GET /goods/?page=1" 200 18806
+172.18.0.1:38564 - - [17/Feb/2024:16:33:19] "OPTIONS /goods/" 200 -
+172.18.0.1:38564 - - [17/Feb/2024:16:33:19] "POST /goods/" 200 110
+172.18.0.1:38564 - - [17/Feb/2024:16:33:20] "GET /goods/?page=1" 200 18806
+172.18.0.1:46256 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:46264 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:46248 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:46256 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:51752 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:51766 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:51764 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:51790 - - [17/Feb/2024:16:33:25] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:38564 - - [17/Feb/2024:16:33:25] "GET /asn/list/?page=1" 200 6391
+172.18.0.1:38564 - - [17/Feb/2024:16:33:30] "POST /asn/list/" 200 339
+172.18.0.1:38564 - - [17/Feb/2024:16:33:46] "GET /goods/?goods_code__icontains=a" 200 18830
+172.18.0.1:38564 - - [17/Feb/2024:16:33:47] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:33:58] "GET /goods/?goods_code__icontains=b" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:01] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:34:14] "GET /goods/?goods_code__icontains=b" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:16] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:34:23] "OPTIONS /goods/?goods_code__icontains=s" 200 -
+172.18.0.1:38564 - - [17/Feb/2024:16:34:23] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:25] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:34:35] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:38] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:38564 - - [17/Feb/2024:16:34:46] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:47] "OPTIONS /goods/?goods_code__icontains=ss" 200 -
+172.18.0.1:38564 - - [17/Feb/2024:16:34:47] "GET /goods/?goods_code__icontains=ss" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:48] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:49] "OPTIONS /goods/?goods_code__icontains=si" 200 -
+172.18.0.1:38564 - - [17/Feb/2024:16:34:49] "GET /goods/?goods_code__icontains=si" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:51] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:54] "GET /goods/?goods_code__icontains=ss" 200 2093
+172.18.0.1:38564 - - [17/Feb/2024:16:34:54] "GET /goods/?goods_code__icontains=s" 200 2093
+172.18.0.1:41098 - - [17/Feb/2024:16:34:55] "GET /goods/?goods_code__icontains=" 200 18829
+172.18.0.1:51570 - - [17/Feb/2024:16:35:01] "GET /statics/goods/goodscolor.png" 200 6965
+172.18.0.1:51558 - - [17/Feb/2024:16:35:01] "GET /statics/goods/goodslist.png" 200 4590
+172.18.0.1:51562 - - [17/Feb/2024:16:35:01] "GET /statics/goods/goodsunit.png" 200 2214
+172.18.0.1:51566 - - [17/Feb/2024:16:35:01] "GET /statics/goods/goodsclass.png" 200 6853
+172.18.0.1:51582 - - [17/Feb/2024:16:35:01] "GET /statics/goods/goodsbrand.png" 200 6852
+172.18.0.1:51594 - - [17/Feb/2024:16:35:02] "GET /statics/goods/goodsshape.png" 200 7457
+172.18.0.1:51596 - - [17/Feb/2024:16:35:02] "GET /statics/goods/goodsspecs.png" 200 6997
+172.18.0.1:51598 - - [17/Feb/2024:16:35:02] "GET /statics/goods/goodsorigin.png" 200 7350
+172.18.0.1:38564 - - [17/Feb/2024:16:35:02] "GET /goods/?page=1" 200 18806
+172.18.0.1:58988 - - [17/Feb/2024:16:36:33] "POST /goods/" 200 603
+172.18.0.1:58988 - - [17/Feb/2024:16:36:33] "GET /goods/?page=1" 200 18791
+172.18.0.1:36526 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/polist.png" 200 3770
+172.18.0.1:36516 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/asn.png" 200 3754
+172.18.0.1:36530 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/preloadstock.png" 200 4248
+172.18.0.1:36538 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/presortstock.png" 200 3376
+172.18.0.1:36562 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/more.png" 200 2953
+172.18.0.1:36546 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/sortstock.png" 200 3181
+172.18.0.1:36572 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/asnfinish.png" 200 3472
+172.18.0.1:36560 - - [17/Feb/2024:16:36:39] "GET /statics/inbound/shortage.png" 200 5160
+172.18.0.1:58988 - - [17/Feb/2024:16:36:39] "GET /asn/list/?page=1" 200 6391
+172.18.0.1:58988 - - [17/Feb/2024:16:36:43] "POST /asn/list/" 200 339
+172.18.0.1:58988 - - [17/Feb/2024:16:36:50] "GET /goods/?goods_code__icontains=b" 200 2093
+172.18.0.1:58988 - - [17/Feb/2024:16:36:52] "GET /goods/?goods_code__icontains=" 200 18814
+172.18.0.1:58988 - - [17/Feb/2024:16:37:04] "OPTIONS /goods/?goods_code__icontains=k" 200 -
+172.18.0.1:58988 - - [17/Feb/2024:16:37:04] "GET /goods/?goods_code__icontains=k" 200 2638
+172.18.0.1:58988 - - [17/Feb/2024:16:37:08] "GET /goods/?goods_code__icontains=" 200 18814
+172.18.0.1:49584 - - [17/Feb/2024:16:38:21] "POST /asn/list/" 200 339
+172.18.0.1:49584 - - [17/Feb/2024:16:38:27] "OPTIONS /goods/?goods_code__icontains=5" 200 -
+172.18.0.1:49584 - - [17/Feb/2024:16:38:27] "GET /goods/?goods_code__icontains=5" 200 4320
+172.18.0.1:49584 - - [17/Feb/2024:16:38:27] "GET /goods/?goods_code__icontains=" 200 18814
+172.18.0.1:49584 - - [17/Feb/2024:16:38:28] "GET /goods/?goods_code__icontains=k" 200 2638
+172.18.0.1:49584 - - [17/Feb/2024:16:38:30] "OPTIONS /goods/?goods_code__icontains=k00034" 200 -
+172.18.0.1:49584 - - [17/Feb/2024:16:38:31] "GET /goods/?goods_code__icontains=k00034" 200 2638
+172.18.0.1:49584 - - [17/Feb/2024:16:38:34] "POST /asn/detail/" 200 20
+172.18.0.1:49584 - - [17/Feb/2024:16:38:34] "GET /asn/list/?page=1" 200 6788
+172.18.0.1:39640 - - [17/Feb/2024:16:41:23] "POST /asn/list/" 200 339
+172.18.0.1:46776 - - [17/Feb/2024:18:21:34] "GET /asn/list/" 200 6788
+172.18.0.1:46776 - - [17/Feb/2024:18:21:40] "POST /asn/list/" 200 339
+172.18.0.1:46776 - - [17/Feb/2024:18:21:40] "POST /asn/detail/" 200 20
+172.18.0.1:38408 - - [17/Feb/2024:18:23:45] "POST /asn/list/" 200 339
+172.18.0.1:38408 - - [17/Feb/2024:18:24:36] "POST /asn/list/" 200 339
+172.18.0.1:57316 - - [17/Feb/2024:18:29:17] "GET /asn/list/" 200 7094
+172.18.0.1:57316 - - [17/Feb/2024:18:29:19] "GET /asn/list/" 200 7094
+172.18.0.1:57316 - - [17/Feb/2024:18:30:00] "GET /asn/list/" 200 7094
+172.18.0.1:57316 - - [17/Feb/2024:18:30:05] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:32:24] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:32:45] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:32:48] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:32:55] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:09] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:18] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:21] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:36] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:53] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:57] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:33:59] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:04] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:15] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:30] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:36] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:46] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:48] "GET /asn/list/" 200 7094
+172.18.0.1:60672 - - [17/Feb/2024:18:34:56] "GET /asn/list/" 200 7094
+172.18.0.1:40320 - - [17/Feb/2024:18:37:00] "GET /asn/list/" 200 7094
+172.18.0.1:40320 - - [17/Feb/2024:18:37:04] "GET /asn/list/" 200 7094
+172.18.0.1:40320 - - [17/Feb/2024:18:37:06] "GET /asn/list/" 200 7094
+172.18.0.1:40320 - - [17/Feb/2024:18:37:12] "GET /asn/list/" 200 7094
+172.18.0.1:40320 - - [17/Feb/2024:18:37:16] "GET /asn/list/" 200 7094
+172.18.0.1:46098 - - [17/Feb/2024:18:39:26] "POST /asn/list/" 200 339
+172.18.0.1:55642 - - [17/Feb/2024:18:39:41] "POST /asn/list/" 200 339
+172.18.0.1:55642 - - [17/Feb/2024:18:39:41] "POST /asn/detail/" 200 20
+172.18.0.1:36696 - - [17/Feb/2024:18:42:16] "GET /goods/?goods_code__icontains=a" 200 18830
+172.18.0.1:36696 - - [17/Feb/2024:18:42:18] "GET /goods/?goods_code__icontains=a0090" 200 2617
+172.18.0.1:36696 - - [17/Feb/2024:18:42:29] "POST /asn/detail/" 200 20
+172.18.0.1:36696 - - [17/Feb/2024:18:42:29] "GET /asn/list/?page=1" 200 7783
+172.18.0.1:55900 - - [17/Feb/2024:18:45:33] "GET /asn/list/" 200 7783
+172.18.0.1:55900 - - [17/Feb/2024:18:45:43] "GET /asn/list/" 200 7783
+172.18.0.1:55900 - - [17/Feb/2024:18:45:47] "GET /asn/list/" 200 7783
+172.18.0.1:55900 - - [17/Feb/2024:18:45:53] "GET /asn/list/" 200 7783
+172.18.0.1:39730 - - [17/Feb/2024:18:49:24] "GET /asn/list/" 200 7783
+172.18.0.1:39730 - - [17/Feb/2024:18:49:25] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:50:57] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:02] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:21] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:32] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:35] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:40] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:43] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:44] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:45] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:47] "GET /asn/list/" 200 7783
+172.18.0.1:57908 - - [17/Feb/2024:18:51:55] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:09] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:29] "GET /asn/list/" 200 7783
+172.18.0.1:52162 - - [17/Feb/2024:18:53:29] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:40] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:46] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:53] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:56] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:53:59] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:54:27] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:54:31] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:54:45] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:54:53] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:05] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:06] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:12] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:14] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:16] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:32] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:33] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:37] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:55:54] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:07] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:09] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:11] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:13] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:15] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:26] "GET /asn/list/" 200 7783
+172.18.0.1:49828 - - [17/Feb/2024:18:56:26] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:08] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:14] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:26] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:30] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:36] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:42] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:55] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:18:59:55] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:18:59:59] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:01] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:08] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:11] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:12] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:15] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:15] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:40] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:45] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:48] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:51] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:00:52] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:00:59] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:05] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:05] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:12] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:12] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:22] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:29] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:31] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:34] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:35] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:38] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:43] "GET /asn/list/" 200 7783
+172.18.0.1:49148 - - [17/Feb/2024:19:01:51] "GET /asn/list/" 200 7783
+172.18.0.1:59298 - - [17/Feb/2024:19:01:53] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:01] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:04] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:08] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:03:08] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:13] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:03:16] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:18] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:03:38] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:43] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:03:53] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:03:57] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:04:00] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:04:07] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:04:10] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:04:29] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:05:04] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:05:13] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:05:16] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:05:22] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:05:26] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:05:31] "GET /asn/list/" 200 7783
+172.18.0.1:38806 - - [17/Feb/2024:19:05:35] "GET /asn/list/" 200 7783
+172.18.0.1:46324 - - [17/Feb/2024:19:05:57] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:41] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:44] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:46] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:49] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:51] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:08:54] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:09:02] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:09:09] "GET /asn/list/" 200 7783
+172.18.0.1:59358 - - [17/Feb/2024:19:09:10] "GET /asn/list/" 200 7783
+172.18.0.1:53436 - - [17/Feb/2024:19:10:25] "GET /asn/list/" 200 7783
+172.18.0.1:53436 - - [17/Feb/2024:19:10:32] "GET /asn/list/" 200 7783
+172.18.0.1:53436 - - [17/Feb/2024:19:10:38] "GET /asn/list/" 200 7783
+172.18.0.1:53436 - - [17/Feb/2024:19:10:55] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:04] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:16] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:32] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:42] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:43] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:48] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:49] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:12:57] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:03] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:14] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:21] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:25] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:31] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:34] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:45] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:13:57] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:14:21] "GET /asn/list/" 200 7783
+172.18.0.1:49354 - - [17/Feb/2024:19:14:25] "GET /asn/list/" 200 7783
+172.18.0.1:36214 - - [17/Feb/2024:19:16:02] "GET /asn/list/" 200 7783
+172.18.0.1:36214 - - [17/Feb/2024:19:16:10] "GET /asn/list/" 200 7783
+172.18.0.1:36214 - - [17/Feb/2024:19:16:25] "GET /asn/list/" 200 7783
+172.18.0.1:36214 - - [17/Feb/2024:19:16:36] "GET /asn/list/" 200 7783
+172.18.0.1:36214 - - [17/Feb/2024:19:16:40] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:17:47] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:17:57] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:25] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:39] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:43] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:48] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:52] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:18:56] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:19:21] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:19:29] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:19:42] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:19:44] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:19:45] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:11] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:25] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:30] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:33] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:39] "GET /asn/list/" 200 7783
+172.18.0.1:45736 - - [17/Feb/2024:19:20:44] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:11:38] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:12:07] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:12:38] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:12:46] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:08] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:19] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:21] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:31] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:35] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:39] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:44] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:13:50] "GET /asn/list/" 200 7783
+172.18.0.1:45208 - - [17/Feb/2024:22:14:04] "GET /asn/list/" 200 7783
+172.18.0.1:42078 - - [17/Feb/2024:22:14:12] "OPTIONS /asn/list/" 200 -
+172.18.0.1:42078 - - [17/Feb/2024:22:14:12] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:18:18] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:18:18] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:18:23] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:18:23] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:18:31] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:18:37] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:18:51] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:18:52] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:19:03] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:19:09] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:19:12] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:19:27] "GET /asn/list/" 200 7783
+172.18.0.1:35924 - - [17/Feb/2024:22:19:29] "GET /asn/list/" 200 7783
+[2024-02-17 22:19:29][django.request.log_response():241] [ERROR] Internal Server Error: /asn/list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: attempt to write a readonly database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 472, in thread_handler
+    raise exc_info[1]
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+  File "/GreaterWMS/./utils/throttle.py", line 23, in allow_request
+    i.delete()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 1118, in delete
+    return collector.delete()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/deletion.py", line 448, in delete
+    count = sql.DeleteQuery(model).delete_batch(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/subqueries.py", line 42, in delete_batch
+    num_deleted += self.do_query(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/subqueries.py", line 20, in do_query
+    cursor = self.get_compiler(using).execute_sql(CURSOR)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: attempt to write a readonly database
+172.18.0.1:35918 - - [17/Feb/2024:22:19:29] "GET /asn/list/" 500 188188
+172.18.0.1:35918 - - [17/Feb/2024:22:19:47] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:20:33] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:20:38] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:31] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:35] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:38] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:42] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:45] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:52] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:54] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:21:55] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:01] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:06] "GET /asn/list/" 200 7783
+172.18.0.1:41422 - - [17/Feb/2024:22:22:07] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:20] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:26] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:30] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:36] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:37] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:38] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:46] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:51] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:56] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:22:59] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:23:00] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:23:21] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:23:24] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:23:51] "GET /asn/list/" 200 7783
+172.18.0.1:39034 - - [17/Feb/2024:22:23:51] "GET /asn/list/" 200 7783
+172.18.0.1:35918 - - [17/Feb/2024:22:24:24] "GET /asn/list/" 200 7783
+172.18.0.1:46252 - - [17/Feb/2024:22:25:26] "GET /asn/list/" 200 7783
+172.18.0.1:46252 - - [17/Feb/2024:22:25:28] "GET /asn/list/" 200 7783
+172.18.0.1:46252 - - [17/Feb/2024:22:25:43] "GET /asn/list/" 200 7783
+172.18.0.1:46252 - - [17/Feb/2024:22:25:48] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:29:07] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:29:25] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:29:26] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:29:30] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:29:35] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:29:50] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:29:58] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:29:58] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:30:06] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:30:12] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:30:16] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:30:16] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:30:21] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:30:22] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:30:42] "GET /asn/list/" 200 7783
+172.18.0.1:48892 - - [17/Feb/2024:22:30:43] "GET /asn/list/" 200 7783
+172.18.0.1:41086 - - [17/Feb/2024:22:30:46] "POST /asn/list/" 200 339
+172.18.0.1:48892 - - [17/Feb/2024:22:30:46] "POST /asn/detail/" 200 55
+172.18.0.1:41086 - - [17/Feb/2024:22:30:48] "POST /asn/list/" 200 339
+172.18.0.1:48892 - - [17/Feb/2024:22:30:48] "POST /asn/detail/" 200 55
+172.18.0.1:41086 - - [17/Feb/2024:22:30:50] "GET /asn/list/" 200 7783
+172.18.0.1:38530 - - [17/Feb/2024:22:33:27] "GET /asn/list/" 200 7783
+172.18.0.1:38530 - - [17/Feb/2024:22:34:08] "GET /asn/list/" 200 7783
+172.18.0.1:39858 - - [17/Feb/2024:22:36:01] "GET /asn/list/" 200 7783
+172.18.0.1:38504 - - [17/Feb/2024:22:38:11] "GET /asn/list/" 200 7783
+172.18.0.1:38504 - - [17/Feb/2024:22:38:27] "GET /asn/list/" 200 7783
+172.18.0.1:38504 - - [17/Feb/2024:22:38:30] "GET /asn/list/" 200 7783
+172.18.0.1:49156 - - [17/Feb/2024:22:39:41] "GET /asn/list/" 200 7783
+172.18.0.1:57708 - - [17/Feb/2024:22:41:38] "GET /asn/list/" 200 7783
+172.18.0.1:57708 - - [17/Feb/2024:22:41:41] "GET /asn/list/" 200 7783
+172.18.0.1:57708 - - [17/Feb/2024:22:42:00] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:43:51] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:43:58] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:44:07] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:44:53] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:45:18] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:45:29] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:45:36] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:46:04] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:46:38] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:46:57] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:47:24] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:47:50] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:01] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:10] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:12] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:14] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:21] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:28] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:33] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:40] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:42] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:48:48] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:49:35] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:49:41] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:49:49] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:49:54] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:49:56] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:06] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:10] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:17] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:20] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:24] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:48] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:50:54] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:51:04] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:51:12] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:51:16] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:51:43] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:51:56] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:52:03] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:52:09] "GET /asn/list/" 200 7783
+172.18.0.1:34336 - - [17/Feb/2024:22:52:19] "GET /asn/list/" 200 7783
+172.18.0.1:44506 - - [17/Feb/2024:22:52:19] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:28] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:32] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:43] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:45] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:48] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:49] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:53:54] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:54:04] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:54:13] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:54:19] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:54:58] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:01] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:07] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:10] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:12] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:13] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:21] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:25] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:55:54] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:01] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:17] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:28] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:29] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:31] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:56:31] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:39] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:56:43] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:48] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:56:53] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:56:54] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:57:04] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:57:25] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:57:45] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:57:47] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:57:53] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:57:59] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:58:05] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:58:08] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:58:17] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:58:19] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:58:29] "GET /asn/list/" 200 7783
+172.18.0.1:39472 - - [17/Feb/2024:22:58:34] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:58:48] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:59:43] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:59:46] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:59:49] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:22:59:52] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:00:00] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:00:20] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:00:30] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:00:39] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:00:42] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:01:07] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:01:42] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:02:01] "GET /asn/list/" 200 7783
+172.18.0.1:52026 - - [17/Feb/2024:23:02:16] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:25] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:42] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:44] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:50] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:55] "GET /asn/list/" 200 7783
+172.18.0.1:52288 - - [17/Feb/2024:23:03:57] "GET /asn/list/" 200 7783
+172.18.0.1:47812 - - [17/Feb/2024:23:04:59] "GET /asn/list/" 200 7783
+172.18.0.1:42572 - - [17/Feb/2024:23:07:47] "GET /asn/list/" 200 7783
+172.18.0.1:42572 - - [17/Feb/2024:23:08:01] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:09:06] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:09:46] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:09:49] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:09:54] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:09:55] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:09:56] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:10:00] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:10:15] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:10:16] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:10:19] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:10:24] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:10:27] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:10:29] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:10:39] "GET /asn/list/" 200 7783
+172.18.0.1:38078 - - [17/Feb/2024:23:10:46] "GET /asn/list/" 200 7783
+172.18.0.1:48800 - - [17/Feb/2024:23:10:46] "GET /asn/list/" 200 7783
+172.18.0.1:43032 - - [18/Feb/2024:00:51:38] "POST /asn/list/" 200 338
+172.18.0.1:43032 - - [18/Feb/2024:00:51:38] "POST /asn/detail/" 200 55
