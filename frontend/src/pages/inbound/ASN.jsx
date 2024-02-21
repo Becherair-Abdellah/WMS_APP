@@ -19,6 +19,7 @@ import { MdOutlineNumbers } from "react-icons/md";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { searched_codes } from "../../api/asn";
+import Pagination from "./Pagination";
 import NewAsn from './NewAsn'
 function ASN() {
   const tool = useSelector(({ set_tools: { operation } }) => operation);
@@ -219,6 +220,7 @@ function ASN() {
         )}
       </div>:
       <NewAsn fn={Set_new_form} state={newForm}/>}
+      <div className="w-full flex justify-center items-center mt-3"><Pagination/></div>
     </>
   );
 }
