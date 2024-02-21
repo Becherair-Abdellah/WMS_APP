@@ -111,7 +111,6 @@ function ASN() {
           </button>
           <button
             onClick={() => {
-              create_goods();
               Set_new_form(false);
             }}
             className="text-white bg-blue-700 hover:bg-blue-600  font-medium rounded-lg text-sm px-4 py-2  "

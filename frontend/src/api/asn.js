@@ -24,21 +24,22 @@ export const getAuth = async ()=>{
 // CREATE NEW LISTS OF GOODS 
 const newForm = {
   asn_code: '',
-  supplier: 'moh',
-  goods_code: ['A000041','A000041','A000041','A000041','A000041','A000041','A000041','A000041','A000041','A000041','A000041','A000041'],
-  goods_qty: [1,2,3,4,5,6,7,8,9,12,32,98],
+  supplier: '',
+  goods_code: [],
+  goods_qty: [],
   creater: ''
 }
 // create new ASN
-export const create_goods = async ()=>{
-  console.log(newForm);
-    //  console.log( localStorage.getItem('openid'));
-
+export const create_goods = async (goods,qty,supplier)=>{
   if(localStorage.getItem('auth')){
     try{
       let req = await axios.post('http://localhost:8008/asn/list/',{creater: 'bachir'},config)
       newForm.asn_code = req.data.asn_code;
       newForm.creater = req.data.creater
+      newForm.goods_code = goods;
+      newForm.goods_qty = qty;
+      console.log(supplier);
+      newForm.supplier = supplier
         let response =  await axios.post('http://localhost:8008/asn/detail/',newForm,config);
     const {data:{results}} = response;
     console.log(response);
@@ -63,6 +64,23 @@ export const searched_codes = async (word)=>{
     const {data:{results}} = req;
     console.log(results);
     return results;
+    }catch(e){
+        console.log(e)
+    }
+  }
+  else{
+    console.log('error');
+  }
+}
+// search of Suppliers 
+export const searched_Suppliers = async ()=>{
+  // console.log(word);
+  if(localStorage.getItem('auth')){
+    try{
+    let req = await axios.get(`http://127.0.0.1:8008/asn/list/`,config);
+    const {data:{supplier_list}} = req;
+    console.log(supplier_list);
+    return supplier_list;
     }catch(e){
         console.log(e)
     }
