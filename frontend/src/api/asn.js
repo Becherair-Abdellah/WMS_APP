@@ -89,3 +89,20 @@ export const searched_Suppliers = async ()=>{
     console.log('error');
   }
 }
+// pre delivery
+export const delivery = async (page)=>{
+  // console.log(word);
+  if(localStorage.getItem('auth')){
+    try{
+    let req = await axios.get(`http://127.0.0.1:8008/asn/detail/?asn_status=2&page=${1}`,config);
+    const {data:{results}} = req;
+    console.log(results);
+    return results;
+    }catch(e){
+        console.log(e)
+    }
+  }
+  else{
+    console.log('error');
+  }
+}

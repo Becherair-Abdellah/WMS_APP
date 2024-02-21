@@ -163,14 +163,14 @@ function ASN() {
         </div>
       )}
       {/* table contnet  */}
-      { newForm ? <div className="overflow-x-auto bg-white mt-3 p-3 rounded-md">
+      { newForm ? <div className="overflow-x-auto bg-white mt-3 p-3 rounded-md h-[750px] w">
         {!load ? (
           <BiRefresh
             size={40}
             className="text-blue-700 font-bold animate-spin ml-[45%]"
           />
         ) : (
-          <table className="table-auto w-full">
+          <table className="table-auto w-full ">
             <thead>
               <tr className="border-b-2">
                 <th className="px-1 py-5  text-start  text-white">

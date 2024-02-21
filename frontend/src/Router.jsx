@@ -6,6 +6,7 @@ import Signin from './pages/login/Signin'
 import Signup from './pages/signup/Signup'
 import Inbound from './pages/inbound/Inbound'
 import ASN from './pages/inbound/ASN'
+import PreDeleviry from './pages/inbound/PreDeleviry'
 const Router = createBrowserRouter([
     {
         path: '/',
@@ -17,7 +18,7 @@ const Router = createBrowserRouter([
             {path:'/inbound', element: <Inbound/>,
             children:[
                 {path:'/inbound/asn',element: <ASN/>},
-                {path:'/inbound/predeliverystock',element: <h1> predeliverystock</h1>},
+                {path:'/inbound/predeliverystock',element: <PreDeleviry/> },
                 {path:'/inbound/preloadstock',element: <h1> preloadstock</h1>},
                 {path:'/inbound/presortstock',element: <h1>Inside Inbound sortstock</h1>},
                 {path:'/inbound/sortstock',element: <h1>Inside Inbound sortstock</h1>},
