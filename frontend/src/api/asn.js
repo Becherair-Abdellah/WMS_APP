@@ -106,3 +106,20 @@ export const delivery = async (page)=>{
     console.log('error');
   }
 }
+// get pagination  
+export const pagination = async (page)=>{
+    // console.log(word);
+    if(localStorage.getItem('auth')){
+      try{
+      let req = await axios.get(`http://127.0.0.1:8008/asn/list/?page=${page}`,config);
+      const {data} = req;
+      console.log(data);
+      return data;
+      }catch(e){
+          console.log(e)
+      }
+    }
+    else{
+      console.log('error');
+    }
+}
