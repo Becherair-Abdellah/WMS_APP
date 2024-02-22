@@ -35,7 +35,7 @@ function Pagination() {
             return(
               <li onClick={()=>{
                 pagination(item+1);
-                console.log(item+1);
+                
               }}>
                 
             <a href="#" className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-blue-600 bg-gray-100 border border-e-0 border-gray-300  hover:bg-gray-100">
