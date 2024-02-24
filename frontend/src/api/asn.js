@@ -11,6 +11,7 @@ export const getAuth = async ()=>{
   if(localStorage.getItem('auth')){
     try{
         let response =  await axios.get('http://localhost:8008/asn/list/',config);
+        console.log(response);
     const {data:{results}} = response;
     return results;
     }catch(e){

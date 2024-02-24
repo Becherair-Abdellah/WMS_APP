@@ -34,7 +34,8 @@ function ASN() {
     const getData = async () => {
       let response = await getAuth();
       // console.log(data);
-      setData(response);
+      console.log(response);
+      // setData(response);
       setLoad(true);
     };
     getData();
@@ -220,7 +221,7 @@ function ASN() {
         )}
       </div>:
       <NewAsn fn={Set_new_form} state={newForm}/>}
-      <div className="w-full flex justify-center items-center mt-3"><Pagination/></div>
+      <div className="w-full flex justify-center items-center mt-3"><Pagination setData={setData}/></div>
     </>
   );
 }
