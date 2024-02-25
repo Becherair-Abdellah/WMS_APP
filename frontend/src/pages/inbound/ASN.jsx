@@ -21,33 +21,32 @@ import { FaPlus } from "react-icons/fa";
 import { searched_codes } from "../../api/asn";
 import Pagination from "./Pagination";
 import NewAsn from './NewAsn'
+import Invoice from "./Invoice";
+import { printASN } from "../../api/asn";
 function ASN() {
   const tool = useSelector(({ set_tools: { operation } }) => operation);
-  console.log(tool);
   const dispatch = useDispatch();
   const ref = useRef();
   const [data, setData] = useState([]);
   const [g_data, getData] = useState({});
   const [load, setLoad] = useState(false);
   const [newForm,Set_new_form] = useState(true);
+  const [showInvoice,set_showInvoice] = useState(false);
   useEffect(() => {
     const getData = async () => {
       let response = await getAuth();
-      // console.log(data);
-      console.log(response);
       // setData(response);
       setLoad(true);
     };
     getData();
   }, []);
-  console.log(load);
   // click functions item
-  const click_item = (item) => {
-    // setTest(id);
-    getData(item);
-  };
+  // const click_item = (item) => {
+  //   // setTest(id);
+  //   getData(item);
+  // };
   return (
-    <>
+    <div className="relative">
       <div className="w-full bg-white p-2 rounded-lg  flex justify-between items-center mt-3">
         <form>
           <label
@@ -94,8 +93,6 @@ function ASN() {
               const getData = async () => {
                 try {
                   let response = await getAuth();
-                  // console.log(data);
-                  console.log(response);
                   setData(response);
                   ref.current.children[0].classList.remove(
                     "animate-spin",
@@ -103,7 +100,6 @@ function ASN() {
                   );
                   setLoad(true);
                 } catch (e) {
-                  console.log(e);
                 }
               };
               getData();
@@ -128,8 +124,9 @@ function ASN() {
             <ul className="flex  gap-5 w-full">
               <li
                 className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1"
-                onClick={() => {
-                  console.log(g_data.total_weight);
+                onClick={async () => {
+                  console.log(g_data);
+                  set_showInvoice(true);
                 }}
               >
                 <IoIosPrint size={23} />
@@ -172,6 +169,7 @@ function ASN() {
             className="text-blue-700 font-bold animate-spin ml-[45%]"
           />
         ) : (
+          <>
           <table className="table-auto w-full ">
             <thead>
               <tr className="border-b-2">
@@ -218,11 +216,13 @@ function ASN() {
               ))}
             </tbody>
           </table>
+          </>
         )}
       </div>:
       <NewAsn fn={Set_new_form} state={newForm}/>}
-      <div className="w-full flex justify-center items-center mt-3"><Pagination setData={setData}/></div>
-    </>
+      {showInvoice? <Invoice data_item={g_data} set_state={set_showInvoice}/>:<></>}
+      {newForm?<div className="w-full flex justify-center items-center mt-3"><Pagination setData={setData}/></div>:''}
+    </div>
   );
 }
 

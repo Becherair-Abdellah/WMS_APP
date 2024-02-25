@@ -11,7 +11,6 @@ export const getAuth = async ()=>{
   if(localStorage.getItem('auth')){
     try{
         let response =  await axios.get('http://localhost:8008/asn/list/',config);
-        console.log(response);
     const {data:{results}} = response;
     return results;
     }catch(e){
@@ -39,11 +38,9 @@ export const create_goods = async (goods,qty,supplier)=>{
       newForm.creater = req.data.creater
       newForm.goods_code = goods;
       newForm.goods_qty = qty;
-      console.log(supplier);
       newForm.supplier = supplier
         let response =  await axios.post('http://localhost:8008/asn/detail/',newForm,config);
     const {data:{results}} = response;
-    console.log(response);
     return results;
     }catch(e){
         console.log(e)
@@ -63,7 +60,6 @@ export const searched_codes = async (word)=>{
     try{
     let req = await axios.get(`http://127.0.0.1:8008/goods/?goods_code__icontains=${word}`,config);
     const {data:{results}} = req;
-    console.log(results);
     return results;
     }catch(e){
         console.log(e)
@@ -80,7 +76,6 @@ export const searched_Suppliers = async ()=>{
     try{
     let req = await axios.get(`http://127.0.0.1:8008/asn/list/`,config);
     const {data:{supplier_list}} = req;
-    console.log(supplier_list);
     return supplier_list;
     }catch(e){
         console.log(e)
@@ -97,7 +92,6 @@ export const delivery = async (page)=>{
     try{
     let req = await axios.get(`http://127.0.0.1:8008/asn/detail/?asn_status=2&page=${1}`,config);
     const {data:{results}} = req;
-    console.log(results);
     return results;
     }catch(e){
         console.log(e)
@@ -114,7 +108,6 @@ export const pagination = async (page)=>{
       try{
       let req = await axios.get(`http://127.0.0.1:8008/asn/list/?page=${page}`,config);
       const {data} = req;
-      console.log(data);
       return data;
       }catch(e){
           console.log(e)
@@ -123,4 +116,21 @@ export const pagination = async (page)=>{
     else{
       console.log('error');
     }
+}
+// print ASN 
+export const printASN = async (id)=>{
+  // console.log(word);
+  if(localStorage.getItem('auth')){
+    try{
+    let req = await axios.get(`http://127.0.0.1:8008/asn/viewprint/${317}`,config);
+    const {data} = req;
+    console.log(data)
+    return data;
+    }catch(e){
+        console.log(e)
+    }
+  }
+  else{
+    console.log('error');
+  }
 }

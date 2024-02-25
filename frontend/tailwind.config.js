@@ -19,6 +19,9 @@ export default {
       },
       gridTemplateColumns:{
         custom: "13% 10% 15% 10% 12% 10% 15% 15%"
+      },
+      boxShadow:{
+        sh_custom: '0px 0px 40px -20px black'
       }
     },
   },
