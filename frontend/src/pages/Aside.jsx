@@ -31,7 +31,7 @@ function Aside() {
             <MdDashboard size={20}/>
             <p>dashboard</p>
           </li>
-          <Link to={'/inbound'} className="cursor-pointer py-2 px-2 flex items-center gap-3 text-white rounded-sm  hover:bg-[#ffffff17]">
+          <Link to={'/inbound/asn'} className="cursor-pointer py-2 px-2 flex items-center gap-3 text-white rounded-sm  hover:bg-[#ffffff17]">
             <TbPackageExport size={20}/>
             <p>Inbound</p>
           </Link>

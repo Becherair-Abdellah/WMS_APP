@@ -12,7 +12,7 @@ function Invoice({data_item,set_state}) {
     const [base64QRCode, setBase64QRCode] = useState('');
     useEffect(() => {
         const getData = async () => {
-          let response = await printASN(1);
+          let response = await printASN(data_item.id);
           // setData(response);
           const {asn_detail,supplier_detail,warehouse_detail} = response;
           console.log(asn_detail);

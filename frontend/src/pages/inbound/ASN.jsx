@@ -22,7 +22,11 @@ import { searched_codes } from "../../api/asn";
 import Pagination from "./Pagination";
 import NewAsn from './NewAsn'
 import Invoice from "./Invoice";
+import {pre_load} from "../../api/asn"
 import { printASN } from "../../api/asn";
+import Pobub from "./Pobub";
+import { sorted } from "../../api/asn";
+import Sorted_Asn from "./Sorted";
 function ASN() {
   const tool = useSelector(({ set_tools: { operation } }) => operation);
   const dispatch = useDispatch();
@@ -32,6 +36,8 @@ function ASN() {
   const [load, setLoad] = useState(false);
   const [newForm,Set_new_form] = useState(true);
   const [showInvoice,set_showInvoice] = useState(false);
+  const [pobub,set_pobub] = useState(false);
+  const [nbr_function,set_nbr_function] = useState('');
   useEffect(() => {
     const getData = async () => {
       let response = await getAuth();
@@ -120,6 +126,7 @@ function ASN() {
 
       {tool && (
         <div className="w-full p-3 mt-3  bg-white shadow-lg rounded-md">
+       {pobub && <Pobub data={g_data.id} set_pobub={set_pobub} nbr_function={nbr_function} data_option={g_data}/>}  
           <div className="w-full ">
             <ul className="flex  gap-5 w-full">
               <li
@@ -133,17 +140,28 @@ function ASN() {
                 <h1>Print</h1>
               </li>
 
-              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1" onClick={()=>{
+                // pre_load();
+                set_nbr_function(1);
+                set_pobub(true);
+              }}>
                 <GiConfirmed size={23} />
                 <h1>Confirme Deleviry</h1>
               </li>
 
-              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1" onClick={()=>{
+                set_nbr_function(2);
+                set_pobub(true);
+              }}>
                 <FaTruckLoading size={23} />
                 <h1>finish loadaing</h1>
               </li>
 
-              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1 ">
+              <li className="flex justify-center flex-col items-center  cursor-pointer hover:text-white bg-pr_color-0 duration-200 w-full hover:bg-blue-600 rounded-md text-white px-2 p-1"
+              onClick={()=>{
+                set_nbr_function(3);
+                set_pobub(true);
+              }}>
                 <FaSortAmountDown size={23} />
                 <h1>Confirme Sorted</h1>
               </li>
@@ -222,6 +240,7 @@ function ASN() {
       <NewAsn fn={Set_new_form} state={newForm}/>}
       {showInvoice? <Invoice data_item={g_data} set_state={set_showInvoice}/>:<></>}
       {newForm?<div className="w-full flex justify-center items-center mt-3"><Pagination setData={setData}/></div>:''}
+      {/* <Sorted_Asn data={g_data}/> */}
     </div>
   );
 }
